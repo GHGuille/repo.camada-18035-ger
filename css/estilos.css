@@ -1,0 +1,795 @@
+/*Colores*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap");
+/*FUENTES DEL SITIO*/
+/* line 6, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.titulo__principal {
+  /*Para los titulos principales*/
+  color: #0045a2;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* line 10, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.titulo__principal:hover {
+  /*Para los titulos principales*/
+  color: #00838f;
+}
+
+/* line 14, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.titulo__secundario {
+  /*Para los titulos secundarios*/
+  color: #0045a2;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* line 18, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.titulo__secundario:hover {
+  /*Para los titulos secundarios*/
+  color: #00838f;
+}
+
+/* line 22, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.texto {
+  /*Para texto en general*/
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: .40px;
+  margin: 0px 0px 0px 10px;
+  padding: 2px 0px 2px 0px;
+  margin: 0px 10px;
+  line-height: 1.5em;
+}
+
+/* line 31, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.menu {
+  /*Para los menues*/
+  text-decoration-line: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0045a2;
+  padding: 10px;
+}
+
+/* line 37, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.menu:hover {
+  text-decoration-line: none;
+  color: #00838f;
+}
+
+/* line 41, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.menu:visited {
+  color: #003c8f;
+}
+
+/* line 46, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.boton--redes {
+  /*Para los menues*/
+  font-size: 24px;
+  font-weight: 600;
+  color: #0045a2;
+  padding: 10px;
+}
+
+/* line 51, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.boton--redes:hover {
+  text-decoration-line: none;
+  color: #00838f;
+}
+
+/* line 55, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.boton--redes:visited {
+  color: #003c8f;
+}
+
+/* line 59, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.boton--leer {
+  /*Para los Botones "leer mas"*/
+  font-size: 1em;
+  font-weight: 300;
+  color: #0045a2;
+  margin: 2px 0px 2px 10px;
+}
+
+/* line 64, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.boton--leer:hover {
+  text-decoration-line: none;
+  color: #00838f;
+}
+
+/* line 68, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+.boton--leer:visited {
+  color: #003c8f;
+}
+
+@media all and (max-width: 768px) {
+  /* line 73, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .titulo__principal {
+    /*Para los titulos principales*/
+    color: #0045a2;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  /* line 78, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .titulo__secundario {
+    /*Para los titulos secundarios*/
+    color: #0045a2;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  /* line 83, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .texto {
+    /*Para texto en general*/
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .40px;
+    margin: 0px 0px 0px 10px;
+    padding: 2px 0px 2px 0px;
+    margin: 0px 10px;
+    line-height: 1.5em;
+  }
+  /* line 92, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .menu {
+    /*Para los menues*/
+    text-decoration-line: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0045a2;
+    padding: 10px;
+  }
+  /* line 98, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .menu:hover {
+    text-decoration-line: none;
+    color: #00838f;
+  }
+  /* line 102, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .menu:visited {
+    color: #003c8f;
+  }
+  /* line 106, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--redes {
+    /*Para los menues*/
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0045a2;
+    padding: 10px;
+  }
+  /* line 111, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--redes:hover {
+    text-decoration-line: none;
+    color: #00838f;
+  }
+  /* line 115, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--redes:visited {
+    color: #003c8f;
+  }
+  /* line 119, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--leer {
+    /*Para los Botones "leer mas"*/
+    font-size: 1em;
+    font-weight: 300;
+    color: #0045a2;
+    margin: 2px 0px 2px 10px;
+  }
+  /* line 124, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--leer:hover {
+    text-decoration-line: none;
+    color: #00838f;
+  }
+  /* line 128, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--leer:visited {
+    color: #003c8f;
+  }
+}
+
+@media all and (max-width: 576px) {
+  /* line 134, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .titulo__principal {
+    /*Para los titulos principales*/
+    color: #0045a2;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  /* line 138, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .titulo__principal:hover {
+    /*Para los titulos principales*/
+    color: #00838f;
+  }
+  /* line 142, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .titulo__secundario {
+    /*Para los titulos secundarios*/
+    color: #0045a2;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  /* line 146, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .titulo__secundario:hover {
+    /*Para los titulos secundarios*/
+    color: #00838f;
+  }
+  /* line 150, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .texto {
+    /*Para texto en general*/
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .40px;
+    margin: 0px 0px 0px 10px;
+    padding: 2px 0px 2px 0px;
+    margin: 0px 10px;
+    line-height: 1.5em;
+  }
+  /* line 159, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .menu {
+    /*Para los menues*/
+    text-decoration-line: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0045a2;
+    padding: 10px;
+  }
+  /* line 165, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .menu:hover {
+    text-decoration-line: none;
+    color: #00838f;
+  }
+  /* line 169, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .menu:visited {
+    color: #003c8f;
+  }
+  /* line 173, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--redes {
+    /*Para los menues*/
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0045a2;
+    padding: 10px;
+  }
+  /* line 178, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--redes:hover {
+    text-decoration-line: none;
+    color: #00838f;
+  }
+  /* line 182, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--redes:visited {
+    color: #003c8f;
+  }
+  /* line 186, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--leer {
+    /*Para los Botones "leer mas"*/
+    font-size: 1em;
+    font-weight: 300;
+    color: #0045a2;
+    margin: 2px 0px 2px 10px;
+  }
+  /* line 191, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--leer:hover {
+    text-decoration-line: none;
+    color: #00838f;
+  }
+  /* line 195, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_fuentes.scss */
+  .boton--leer:visited {
+    color: #003c8f;
+  }
+}
+
+/* line 1, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #EEE;
+}
+
+/*Estilos de encabezado*/
+/* line 11, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+.encabezado__sitio {
+  margin: auto;
+  padding: auto;
+  background-color: #EEE;
+  border-bottom: 0.15em solid #00838f;
+}
+
+@media all and (max-width: 576px) {
+  /* line 11, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+  .encabezado__sitio {
+    height: 8vh;
+    margin: auto;
+    padding: auto;
+    background-color: #EEE;
+    border-bottom: 2px solid #bdb5b5;
+  }
+}
+
+/* line 24, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+.encabezado__sitio--logo, .pie__pagina--logo {
+  background: url("../media/logoSF.png") no-repeat;
+  background-size: 22rem;
+  height: 60px;
+  margin: 10px 5px 5px 5px;
+  min-width: 150px;
+  flex-grow: 1;
+}
+
+@media all and (max-width: 1190px) {
+  /* line 24, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+  .encabezado__sitio--logo, .pie__pagina--logo {
+    background-size: 20rem;
+  }
+}
+
+@media all and (max-width: 576px) {
+  /* line 24, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+  .encabezado__sitio--logo, .pie__pagina--logo {
+    background-size: 17rem;
+    height: 45px;
+    margin: 10px 5px 5px 5px;
+    min-width: 100px;
+    flex-grow: 1;
+  }
+}
+
+/*Estilos de Pie de pagina*/
+/* line 43, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+.pie__pagina {
+  height: 4vh;
+  min-height: 50px;
+  padding: 0px 20px 2px 20px;
+  background-color: #EEE;
+  border-top: 2px solid #bdb5b5;
+}
+
+@media all and (max-width: 576px) {
+  /* line 43, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+  .pie__pagina {
+    height: 8vh;
+    margin: auto;
+    padding: auto;
+    background-color: #EEE;
+  }
+}
+
+/* line 59, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+.backToTop {
+  background-color: #0045a2;
+  width: 50px;
+  height: 50px;
+  padding: auto;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* line 66, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+.backToTop:hover {
+  background-color: #00838f;
+}
+
+/* line 69, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+.backToTop .top {
+  color: #fff;
+  font-size: 40px;
+  margin: 5px auto;
+}
+
+@media all and (max-width: 576px) {
+  /* line 59, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+  .backToTop {
+    background-color: #0045a2;
+    width: 35px;
+    height: 35px;
+    padding: auto;
+    text-align: center;
+    border-radius: 2px;
+  }
+  /* line 81, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+  .backToTop .top {
+    color: #fff;
+    font-size: 25px;
+    margin: 5px auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /* line 89, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+  .noTab {
+    display: none;
+  }
+}
+
+@media all and (max-width: 576px) {
+  /* line 94, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_main.scss */
+  .noMobile {
+    display: none;
+  }
+}
+
+/*estilos de noticias*/
+/* line 2, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.cuerpo__principal {
+  min-height: 100px;
+  margin: auto;
+}
+
+/*Nota principal*/
+/* line 7, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.nota__principal {
+  height: 80vh;
+  min-height: 550px;
+  margin: auto;
+  padding: auto;
+  background-image: url("../media/noticia1.jpeg");
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+/* line 16, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.nota__principal .nota__parrafo {
+  margin: 210px auto;
+  padding: 1.5em;
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+/* line 22, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.separador__nota {
+  margin: auto;
+  border-bottom: 1px solid #00838f;
+}
+
+/*Notas Secundarias*/
+/* line 28, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.notas__secundarias {
+  margin: 1em 0em auto;
+  padding: auto;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+
+/* line 34, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.notas__secundarias--imagen {
+  width: 25rem;
+  height: 18rem;
+}
+
+/* line 38, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.notas__secundarias--texto {
+  margin: 0em 1em;
+}
+
+/* line 40, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.notas__secundarias--texto a {
+  text-decoration: none;
+}
+
+/*Tarjeta de Tutoriales*/
+/* line 46, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.tutorial__tarjeta {
+  width: 15rem;
+  height: 20rem;
+  margin: 1em auto;
+  padding: auto;
+  position: relative;
+  display: flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #00838f;
+  border-radius: .40rem;
+}
+
+/* line 63, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.tutorial__tarjeta--cuerpo {
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+/* line 67, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.tutorial__tarjeta--titulo {
+  color: #0045a2;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* line 72, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.tutorial__tarjeta--subtitulo {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #00838f;
+}
+
+/* line 77, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.tutorial__tarjeta--texto {
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: .40px;
+  margin: 0px 0px 0px 10px;
+  padding: 2px 0px 2px 0px;
+  margin: 0px 10px;
+  line-height: 1.5em;
+}
+
+/* line 86, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.tutorial__tarjeta--boton {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #0045a2;
+  margin: 2px 0px 2px 10px;
+}
+
+/* line 91, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.tutorial__tarjeta--boton:hover {
+  text-decoration-line: none;
+  color: #00838f;
+}
+
+/* line 95, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.tutorial__tarjeta--boton:visited {
+  color: #003c8f;
+}
+
+/*Nota final*/
+/* line 100, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.nota__final {
+  margin: 1em 0em auto;
+  padding: auto;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+
+/* line 106, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.nota__final--imagen {
+  width: 25rem;
+  height: 18rem;
+}
+
+/* line 110, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.nota__final--texto {
+  margin: 0em 1em;
+}
+
+/* line 112, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.nota__final--texto a {
+  text-decoration: none;
+}
+
+/* line 117, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.botonVerMas {
+  margin: 20px 20px 30px 50px;
+  padding: 10px 20px 10px 20px;
+  background-color: #EEE;
+  border-radius: 25px;
+  border-color: #004aad;
+  font-size: 18px;
+  font-weight: 500;
+  color: #004aad;
+}
+
+/* line 126, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+.botonVerMas:hover {
+  background: linear-gradient(#004aad, #EEE);
+  border-radius: 25px;
+  border-color: #EEE;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+/*CAMBIO A TABLET*/
+@media all and (max-width: 768px) {
+  /*estilos de noticias*/
+  /* line 138, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .cuerpo__principal {
+    min-height: 100px;
+    margin: auto;
+  }
+  /*Nota principal*/
+  /* line 143, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__principal {
+    height: 50vh;
+    margin: auto;
+    padding: auto;
+    background-image: url("../media/noticia1.jpeg");
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+  }
+  /* line 151, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__principal .nota__parrafo {
+    margin: 20em auto;
+    padding: 1.5em;
+    background-color: rgba(240, 240, 240, 0.9);
+  }
+  /* line 155, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__principal .nota__parrafo a {
+    text-decoration: none;
+  }
+  /* line 160, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .separador__nota {
+    height: 1em;
+    margin: auto;
+    border-bottom: 1px solid #00838f;
+  }
+  /*Notas Secundarias*/
+  /* line 167, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .notas__secundarias {
+    margin: 1em 0em auto;
+    padding: auto;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+  }
+  /* line 173, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .notas__secundarias--imagen {
+    width: 20rem;
+    height: 14rem;
+  }
+  /* line 177, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .notas__secundarias--texto {
+    margin: 0em 1em;
+  }
+  /* line 179, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .notas__secundarias--texto a {
+    text-decoration: none;
+  }
+  /*Tarjeta de Tutoriales*/
+  /* line 185, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .tutorial__tarjeta {
+    width: 15rem;
+    height: auto;
+    margin: 1em auto;
+    padding: auto;
+    position: relative;
+    display: flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+  }
+  /* line 199, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__final {
+    margin: 1em 0em auto;
+    padding: auto;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+  }
+  /* line 205, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__final--imagen {
+    width: 20rem;
+    height: 14rem;
+  }
+  /* line 209, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__final--texto {
+    margin: 0em 1em;
+  }
+  /* line 211, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__final--texto a {
+    text-decoration: none;
+  }
+  /* line 216, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .botonVerMas {
+    margin: 20px 20px 30px 50px;
+    padding: 10px 20px 10px 20px;
+    background-color: #EEE;
+    border-radius: 25px;
+    border-color: #004aad;
+    font-size: 18px;
+    font-weight: 500;
+    color: #004aad;
+  }
+  /* line 226, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .botonVerMas:hover {
+    margin: 20px 20px 30px 50px;
+    padding: 10px 20px 10px 20px;
+    background: linear-gradient(#004aad, #EEE);
+    border-radius: 25px;
+    border-color: #EEE;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+}
+
+/*CAMBIO A CELULAR*/
+@media all and (max-width: 576px) {
+  /*estilos de noticias*/
+  /* line 240, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .cuerpo__principal {
+    min-height: 80px;
+    margin: auto;
+  }
+  /*Nota principal*/
+  /* line 245, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__principal {
+    height: 50vh;
+    margin: auto;
+    padding: auto;
+    background-image: url("../media/noticia1.jpeg");
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+  }
+  /* line 253, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__principal .nota__parrafo {
+    margin: 15em auto;
+    padding: 1.5em;
+    background-color: rgba(240, 240, 240, 0.9);
+  }
+  /* line 257, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .nota__principal .nota__parrafo a {
+    text-decoration: none;
+  }
+  /* line 262, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .separador__nota {
+    height: 1em;
+    margin: auto;
+    border-bottom: 1px solid #00838f;
+  }
+  /*Notas Secundarias*/
+  /* line 269, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .notas__secundarias {
+    margin: 1em 0em auto;
+    padding: auto;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+  }
+  /* line 275, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .notas__secundarias--imagen {
+    width: 20rem;
+    height: 14rem;
+  }
+  /* line 279, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .notas__secundarias--texto {
+    margin: 0em 1em;
+  }
+  /* line 281, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_index.scss */
+  .notas__secundarias--texto a {
+    text-decoration: none;
+  }
+}
+
+/* line 1, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_tutoriales.scss */
+.no--list {
+  list-style-type: none;
+}
+
+/* line 2, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_blog.scss */
+.publicidad {
+  background: url("../media/publicidad-lg.png") no-repeat;
+  width: 70em;
+  height: 3.125em;
+  margin: 1em;
+  flex-grow: 1;
+}
+
+@media all and (max-width: 768px) {
+  /* line 2, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_blog.scss */
+  .publicidad {
+    background: url("../media/publicidad-md.png") no-repeat;
+    width: 46.249em;
+    height: 3.125em;
+  }
+}
+
+@media all and (max-width: 576px) {
+  /* line 2, ../CAMADA_18035 HTML_CSS/Clase_12/Desafio_12/scss/_blog.scss */
+  .publicidad {
+    background: url("../media/publicidad-sm.png") no-repeat;
+    width: 35em;
+    height: 3.125em;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
