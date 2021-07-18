@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	background-color: $background;
+}
+/*Estilos de encabezado*/
+.encabezado__sitio{
+	margin: auto;
+	padding: auto;
+	background-color: $background;
+	border-bottom: .15em solid $borderBottom;
+	@media all and (max-width: 576px){
+		height: 8vh;
+		margin: auto;
+		padding: auto;
+		background-color: #EEE;
+		border-bottom: 2px solid #bdb5b5;
+	}
+}
+.encabezado__sitio--logo{
+	background: url("../media/logoSF.png") no-repeat;
+	background-size: 22rem;
+	height: 60px;
+	margin: 10px 5px 5px 5px;
+	min-width: 150px;
+	flex-grow: 1;
+	@media all and (max-width: 1190px){
+		background-size: 20rem;
+	}
+	@media all and (max-width: 576px){
+		background-size: 17rem;
+		height: 45px;
+		margin: 10px 5px 5px 5px;
+		min-width: 100px;
+		flex-grow: 1;
+	}
+}
+/*Estilos de Pie de pagina*/
+.pie__pagina{
+	height: 4vh;
+	min-height: 50px;
+	padding: 0px 20px 2px 20px;
+	background-color: #EEE;
+	border-top: 2px solid #bdb5b5;
+	@media all and (max-width: 576px){
+			height: 8vh;
+			margin: auto;
+			padding: auto;
+			background-color: #EEE;
+	}
+}
+.pie__pagina--logo{
+	@extend .encabezado__sitio--logo
+}
+.backToTop{
+  background-color: $fontColor;
+  width: 50px;
+  height: 50px;
+  padding: auto;
+  text-align: center;
+  border-radius: 4px;
+	&:hover {
+	  background-color: $fontColorH;
+	}
+	& .top{
+		color: #fff;
+		font-size: 40px;
+		margin: 5px auto;
+	}
+	@media all and (max-width: 576px){
+		background-color: $fontColor;
+		width: 35px;
+		height: 35px;
+		padding: auto;
+		text-align: center;
+		border-radius: 2px;
+		& .top{
+		color: #fff;
+		font-size: 25px;
+		margin: 5px auto;
+		}
+	}
+}
+@media all and (max-width: 768px){
+	.noTab{
+		display: none;
+	}
+}
+@media all and (max-width: 576px){
+	.noMobile{
+		display: none;
+	}
+}
