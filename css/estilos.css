@@ -208,7 +208,7 @@ label #menuMobile {
 
 /* line 161, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .piePagina .copyright {
-  margin-top: 15px;
+  margin: 1rem 0.5rem;
   text-align: center;
   font-size: 13px;
   color: #aaa;
