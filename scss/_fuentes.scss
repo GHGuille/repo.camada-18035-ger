@@ -28,34 +28,6 @@
 	margin: 0px 10px;
 	line-height: 1.5em;
 }
-.menu{/*Para los menues*/
-	text-decoration-line: none;
-	font-size: 1.25rem;
-	font-weight: 600;
-	color:$fontColor;
-	padding: 10px;
-	&:hover{
-	text-decoration-line: none;
-	color: $fontColorH;
-	}
-	&:visited{
-	color:$fontColorV;
-	}
-}
-
-.boton--redes{/*Para los menues*/
-	font-size: 24px;
-	font-weight: 600;
-	color:#0045a2;
-	padding: 10px;
-	&:hover{
-	text-decoration-line: none;
-	color: $fontColorH;
-	}
-	&:visited{
-	color:$fontColorV;
-	}
-}
 .boton--leer{/*Para los Botones "leer mas"*/
 	font-size: 1em;
 	font-weight: 300;
@@ -88,33 +60,6 @@
 		padding: 2px 0px 2px 0px;
 		margin: 0px 10px;
 		line-height: 1.5em;
-	}
-	.menu{/*Para los menues*/
-		text-decoration-line: none;
-		font-size: 1.25rem;
-		font-weight: 600;
-		color:$fontColor;
-		padding: 10px;
-		&:hover{
-		text-decoration-line: none;
-		color: $fontColorH;
-		}
-		&:visited{
-		color:$fontColorV;
-		}
-	}
-	.boton--redes{/*Para los menues*/
-		font-size: 1rem;
-		font-weight: 600;
-		color:#0045a2;
-		padding: 10px;
-		&:hover{
-		text-decoration-line: none;
-		color: $fontColorH;
-		}
-		&:visited{
-		color:$fontColorV;
-		}
 	}
 	.boton--leer{/*Para los Botones "leer mas"*/
 		font-size: 1em;
@@ -155,33 +100,6 @@
 		padding: 2px 0px 2px 0px;
 		margin: 0px 10px;
 		line-height: 1.5em;
-	}
-	.menu{/*Para los menues*/
-		text-decoration-line: none;
-		font-size: 1.25rem;
-		font-weight: 600;
-		color:$fontColor;
-		padding: 10px;
-		&:hover{
-		text-decoration-line: none;
-		color: $fontColorH;
-		}
-		&:visited{
-		color:$fontColorV;
-		}
-	}
-	.boton--redes{/*Para los menues*/
-		font-size: 1rem;
-		font-weight: 600;
-		color:#0045a2;
-		padding: 10px;
-		&:hover{
-		text-decoration-line: none;
-		color: $fontColorH;
-		}
-		&:visited{
-		color:$fontColorV;
-		}
 	}
 	.boton--leer{/*Para los Botones "leer mas"*/
 		font-size: 1em;
