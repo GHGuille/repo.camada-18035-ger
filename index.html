@@ -12,7 +12,7 @@
 </head>
 <body>
 	<!--comienzo encabezado-->
-	<nav class="encabezado fixed-top">
+	<nav class="encabezado">
       <input type="checkbox" id="check">
       <label for="check" >
         <i class="fas fa-ellipsis-v" id="menuMobile"></i>
@@ -21,122 +21,28 @@
       <div class="encabezadoMenu">
         <a class="menuLink" href="tutoriales.html">Tutoriales</a>
         <a class="menuLink" href="blog.html">Blog</a>
-        <a class="menuLink" href="#">Herramientas</a>
-        <a class="menuLink" href="#">Contacto</a>
+        <a type="button" class="menuLink" data-toggle="modal" data-target="#exampleModal1">Herramientas</a>
+        <a type="button" class="menuLink" data-toggle="modal" data-target="#exampleModal1">Contacto</a>
       </div>
     </nav>
     <!--fin encabezado-->
-	<section class="container-fluid container-lg">
-		<div id="cuerpoPrincipal" class="cuerpo__principal"></div><!--solo para boton de regreso-->
-		<article class="nota__principal col-12">
-			<a href="https://www.xataka.com/pro/como-tomar-notas-reuniones-9-herramientas-buenas-practicas" target="_blank"></a>
-			<div class="nota__parrafo">
-				<a href="https://www.xataka.com/pro/como-tomar-notas-reuniones-9-herramientas-buenas-practicas" target="_blank">
-					<h5 class="titulo__principal">Cómo tomar notas en las reuniones: 9 herramientas y buenas prácticas</h5>
-					</i>
-				</a>
-				<p class="texto noTab noMobile">A veces odiadas y muchas veces necesarias, las reuniones son el pan nuestro de cada día en los entornos laborales.
-				hoy les compartimos una seria de herramientas y buenas practicas para llevaras a cabo y no perderse en la reunion</p>
-				<a href="https://www.xataka.com/pro/como-tomar-notas-reuniones-9-herramientas-buenas-practicas" target="_blank" class="boton--leer noTab noMobile"> leer mas <i class="fas fa-external-link-alt"></i></a>
-			</div>
-		</article>
-	</section>
-	<div class="container separador__nota"></div>
-	<section class="container-fluid container-lg" id="cuerpo2">
-		<div class="row">
-			<article id="nota2" class="notas__secundarias col-12 col-lg-8">
-				<img class="notas__secundarias--imagen" src="media/noticia2.jpg">
-				<div class="notas__secundarias--texto">
-					<a href="https://www.xataka.com/pro/algoritmo-que-penaliza-tus-datos-productividad-ir-al-bano-asi-sistema-que-amazon-va-a-cambiar-denuncias-lesiones-laborales" target="_blank"> 
-						<h6 class="titulo__secundario">El algoritmo que penaliza tus datos de productividad por ir al baño</h6>
-					</a>
-					<p class="texto noMobile">así es el sistema que Amazon va a cambiar ante las denuncias por lesiones laborales.</p>
-					<a href="https://www.xataka.com/pro/algoritmo-que-penaliza-tus-datos-productividad-ir-al-bano-asi-sistema-que-amazon-va-a-cambiar-denuncias-lesiones-laborales" target="_blank" class="boton--leer noMobile"> leer mas <i class="fas fa-external-link-alt"></i></a>
-				</div>
-			</article>
-			<section class="tutorial__tarjeta col-11 col-lg-3">
-				<div class="">
-				  <div class="tutorial__tarjeta--cuerpo">
-				    <p class="tutorial__tarjeta--titulo">Tutoriales</p>
-				    <p class="tutorial__tarjeta--subtitulo">Google sheets</p>
-				    <p class="tutorial__tarjeta--texto">Los tutoriales para sacarle el jugo a esta herramienta encuentralos aqui</p>
-				    <ul>
-				    	<li>
-				    		<a type="button" class="tutorial__tarjeta--boton" data-toggle="modal" data-target="#exampleModal1">
-  							Combinar correo
-  							</a><!--Prueba de boton modal-->
-				    	</li>
-				    </ul>
-				    
-				  </div>
-				</div>
-			</section>
-		</div>
-	</section>	
-	<div class="container separador__nota"></div>	
-	<section class="container-fluid container-lg" id="cuerpo3">
-		<div class="row">
-			<article id="nota3" class="nota__final col-12 col-lg-12">
-				<img class="nota__final--imagen" src="media/noticia3.jpeg">
-				<div class="nota__final--texto">
-					<a href="https://www.xataka.com/pro/abogado-que-acabo-ingeniero-google-otros-casos-personas-que-dieron-giro-profesional-completo-a-su-vida-apostando-tecnologia" target="_blank"> 
-						<h6 class="titulo__secundario">Del abogado que acabó de ingeniero en Google y otros giros profesionales por la tecnología</h6>
-					</a>
-					<p class="texto noMobile">Naces, creces, estudias, trabajas, te especializas en un campo y, ¿te jubilas? No siempre. </p>
-					<p class="texto noTab noMobile">De hecho, hay gente que después de muchos años de carrera profesional es capaz de dar un giro completo a su vida y dedicarse a algo totalmente distinto y ajeno a lo que venían haciendo.</p>
-					<a href="https://www.xataka.com/pro/abogado-que-acabo-ingeniero-google-otros-casos-personas-que-dieron-giro-profesional-completo-a-su-vida-apostando-tecnologia" target="_blank" class="boton--leer noMobile"> leer mas <i class="fas fa-external-link-alt"></i></a>
-				</div>
-			</article>
-			<div class="container separador__nota"></div>
-			<article id="notaFinal" class="nota__final col-12 col-lg-12">
-				<img class="nota__final--imagen"src="media/noticia4.jpg">
-				<div class="nota__final--texto">
-					<a href="https://www.xataka.com/pro/airbnb-quiere-reinventarse-como-plataforma-para-nomadas-digitales-estadias-largas-trabajo-remoto-descuentos-para-probar-otros-lugares" target="_blank"> 
-						<h6 class="titulo__secundario">Airbnb quiere reinventarse como plataforma para nómadas digitales</h6>
-					</a>
-					<p class="texto noMobile">El año 2020 fue muy complicado para Airbnb, como para casi cualquier empresa del sector turístico. </p>
-					<p class="texto noTab noMobile">De hecho, la compañía californiana tuvo que tomar una medida radical tres meses después de la declaración de la pandemia: despidió a casi 2.000 empleados, un 25% de su plantilla, a finales del junio pasado.</p>
-					<a href="https://www.xataka.com/pro/airbnb-quiere-reinventarse-como-plataforma-para-nomadas-digitales-estadias-largas-trabajo-remoto-descuentos-para-probar-otros-lugares" target="_blank"class="boton--leer noMobile"> leer mas <i class="fas fa-external-link-alt"></i></a>
-				</div>
-			</article>
-			<div class="col-12 flex-start">
-				<button type="button" class="botonVerMas" data-toggle="modal" data-target="#exampleModal1">
-	  							Ver mas notas
-			</button><!--Prueba de boton modal-->
-			</div>
-		</div>
-	</section>
-	</div>
-	<section class="tutoriales">Avisos Publicitarios</section>
-	<footer id="piePagina" class="pie__pagina container-fluid px-0">
-		<div class="container">
-			<nav class="row navbar navbar-expand-lg">
-			  <a class="navbar-brand pie__pagina--logo col-12 col-lg-4" href="index.html"></a>
-			  <div class="col-8 col-lg-6">
-					<div class="d-flex"><!--Redes Sociales del Blog--->
-						<button type="button" class="btn boton--redes" data-toggle="modal" data-target="#exampleModal">
-  							<i class="fab fa-facebook-square"></i>
-						</button><!--Prueba de boton modal-->
-						<button type="button" class="btn boton--redes" data-toggle="modal" data-target="#exampleModal">
-  							<i class="fab fa-instagram-square"></i>
-						</button>
-						<button type="button" class="btn boton--redes" data-toggle="modal" data-target="#exampleModal">
-  							<i class="fab fa-telegram"></i>
-						</button><!--Prueba de boton modal-->
-						<button type="button" class="btn boton--redes" data-toggle="modal" data-target="#exampleModal">
-  							<i class="fab fa-linkedin"></i>
-						</button>
-					</div>
-				</div>
-				<div class="col-4 col-lg-2">
-					<div class="backToTop ">
-						<a href="#cuerpoPrincipal"><i class="fas fa-arrow-up top"></i></a>
-					</div>
-				</div>
-				
-			</nav>
-		</div>
-	</footer><!--fin pie de pagina-->
+    <!--comienza pie de pagina-->
+	<footer class="piePagina">
+        <div class="pieRedes">
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#exampleModal"><i class="fab fa-facebook-square"></i></a>
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#exampleModal"><i class="fab fa-instagram-square"></i></a>
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#exampleModal"><i class="fab fa-telegram"></i></a>
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#exampleModal"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="pieMenu noMobile">
+	        <a class="pieLink" href="tutoriales.html">Tutoriales</a>
+	        <a class="pieLink" href="blog.html">Blog</a>
+	        <a type="button" class="pieLink" data-toggle="modal" data-target="#exampleModal1">Herramientas</a>
+	        <a type="button" class="pieLink" data-toggle="modal" data-target="#exampleModal1">Contacto</a>
+      	</div>
+        <p class="copyright">Productivate, una web realizada para proyecto de curos de HTML/CSS en CODER por Guillermo Reula © 2021</p>
+    </footer>
+	><!--fin pie de pagina-->
 	<!--Modal de paginas en construccion-->
 	<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">

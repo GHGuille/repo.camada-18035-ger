@@ -90,6 +90,7 @@ label #menuMobile{
 	float: right;
 	 #menuMobile{
   	display: block;
+  	margin-right: 1rem;
   		}
 	} 
   .encabezado .encabezadoMenu{
@@ -109,59 +110,70 @@ label #menuMobile{
   }
   #check:checked ~ .encabezadoMenu{
     left: 0;
-    &.active,&:hover{
+    z-index: 1030;
+    }
+  #menuMobile:hover{
 		color: $fontColorH;
 		transition: .5s;
 		}
-    }
 }
 /*Estilos de Pie de pagina*/
-.pie__pagina{
-	height: 4vh;
-	min-height: 50px;
-	padding: 0px 20px 2px 20px;
-	background-color: #EEE;
-	border-top: 2px solid #bdb5b5;
-	@media all and (max-width: 576px){
-			height: 8vh;
-			margin: auto;
-			padding: auto;
-			background-color: #EEE;
+.piePagina {
+	padding:2.5rem 0;
+	background-color:#ffffff;
+	.pieRedes {
+		text-align:center;
+		padding-bottom:1.6rem;
+		.redesLink{
+			font-size:1.5rem;
+			width:2.5rem;
+			height:2.5rem;
+			line-height:2.5rem;
+			display:inline-block;
+			text-align:center;
+			margin:0 8px;
+			color:$fontColor;
+			opacity:0.75;
+			&:hover {
+				color:$fontColorH;
+				opacity:0.9;
+			}
+		}
+	}
+	.pieMenu {
+		padding:0;
+		list-style:none;
+		text-align:center;
+		font-size:18px;
+		line-height:1.6;
+		margin-bottom:0;
+		.pieLink {
+		padding:0 10px;
+		color:$fontColor;
+		text-decoration:none;
+		opacity:0.8;
+		&:hover {
+			color: $fontColorH;
+			transition: .5s;
+			}
+		}	
+	}
+	.copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#aaa;
+	margin-bottom:0;
 	}
 }
 
-.backToTop{
-  background-color: $fontColor;
-  width: 50px;
-  height: 50px;
-  padding: auto;
-  text-align: center;
-  border-radius: 4px;
-	&:hover {
-	  background-color: $fontColorH;
-	}
-	& .top{
-		color: #fff;
-		font-size: 40px;
-		margin: 5px auto;
-	}
-	@media all and (max-width: 576px){
-		background-color: $fontColor;
-		width: 35px;
-		height: 35px;
-		padding: auto;
-		text-align: center;
-		border-radius: 2px;
-		& .top{
-		color: #fff;
-		font-size: 25px;
-		margin: 5px auto;
-		}
-	}
-}
 @media all and (max-width: 768px){
-	.noTab{display: none;}
+	.noTab{
+		display: none;
+	}
 }
 @media all and (max-width: 576px){
-	.noMobile{display: none;}
+	.noMobile{
+		display: none;
+	}
 }
