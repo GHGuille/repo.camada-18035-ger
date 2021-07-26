@@ -1,0 +1,17 @@
+.tutorial__tarjeta{
+width: 15rem;
+	height: 20rem;
+	margin: 1em auto;
+	padding: auto;
+	position: relative;
+	display: flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: $backgroundTarjetas;
+	background-clip: border-box;
+	border: 1px solid $borderBottom;
+	border-radius: .40rem;
+	}

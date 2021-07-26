@@ -166,7 +166,11 @@ label #menuMobile{
 	margin-bottom:0;
 	}
 }
-
+@media all and (max-width: 1118px){
+	.noLaptop{
+		display: none;
+	}
+}
 @media all and (max-width: 768px){
 	.noTab{
 		display: none;
@@ -176,4 +180,11 @@ label #menuMobile{
 	.noMobile{
 		display: none;
 	}
+}
+/*especiales*/
+.marginTop{
+	margin-top: 7rem;
+}
+.marginBottom{
+	margin-bottom: 2rem;
 }

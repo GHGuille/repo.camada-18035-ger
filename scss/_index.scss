@@ -1,135 +1,127 @@
-/*estilos de noticias*/
-.cuerpo__principal{
-	min-height: 100px; 
-	margin: auto;
-}
 /*Nota principal*/
-.nota__principal{
-	height: 80vh;
-	min-height:550px;
-	margin: auto;
-	padding: auto;
-	background-image: url("../media/noticia1.jpeg");
-	display: flex; 
-	flex-flow: column wrap;
-	align-content: flex-start;
-	& .nota__parrafo{
-	margin: 210px auto;
-	padding: 1.5em;
-	background-color: rgba(240, 240, 240, 0.9);
+.notaPrincipal{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.50rem;
+	&::before, ::after{
+		box-sizing: border-box;
+	}
+	& .notaParrafo{
+	    flex: 1 1 auto;
+		min-height: 1px;
+		padding: 1.25rem;
+		a{text-decoration:none;}
 	}
 }
-.separador__nota{
-	margin: auto;
-	border-bottom: 1px solid $fontColorH;
-}
-
 /*Notas Secundarias*/
-.notas__secundarias{
-	margin: 1em 0em auto;
-	padding: auto;
-	display: flex; 
-	flex-flow: row;
-	align-items: flex-start;
-	&--imagen{
-	width: 25rem;
-	height: 18rem;
+.notaSecundaria{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.50rem;
+	&::before, ::after{
+		box-sizing: border-box;
 	}
-	&--texto{
-	margin: 0em 1em;
-	& a{
-	text-decoration: none;
-		}
+	& .notaParrafo{
+		min-height: 1px;
+		padding: 0.25rem 0.5rem;
+		a{text-decoration:none;}
 	}
+}
+img{
+	flex-shrink: 0;
+	width: 100%;
+	vertical-align: middle;
+	border-style: none;
 }
 /*Tarjeta de Tutoriales*/
-.tutorial__tarjeta{
-	width: 15rem;
-	height: 20rem;
-	margin: 1em auto;
-	padding: auto;
+.tarjetas{
 	position: relative;
-	display: flexbox;
+	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: column;
 	flex-direction: column;
 	min-width: 0;
 	word-wrap: break-word;
-	background-color: $backgroundTarjetas;
+	background-color: #fff;
 	background-clip: border-box;
-	border: 1px solid $borderBottom;
-	border-radius: .40rem;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	.tarjetaCabezera{
+		padding: .75rem 1.25rem;
+		margin-bottom: 0;
+		background-color: $menuBack;
+		border-bottom: 1px solid rgba(0,0,0,.125);
+		border-radius: .2rem .2rem 0 0;
 	}
-.tutorial__tarjeta--cuerpo{
-	min-height: 1px;
-	padding: 1.25rem;
-}
-.tutorial__tarjeta--titulo{
-	@include fTitulos;
-	font-size: 1.5rem;
-	font-weight: 400;
-}
-.tutorial__tarjeta--subtitulo{
-	font-size: 1rem;
-	font-weight: 300;
-	color:$fontColorH;
-}
-.tutorial__tarjeta--texto{
-	font-size: 1rem;
-	font-weight: 200;
-	letter-spacing: .40px;
-	margin: 0px 0px 0px 10px;
-	padding: 2px 0px 2px 0px;
-	margin: 0px 10px;
-	line-height: 1.5em;
-}
-.tutorial__tarjeta--boton{
-	font-size: 1rem;
-	font-weight: 300;
-	color:$fontColor;
-	margin: 2px 0px 2px 10px;
-	&:hover{
-	text-decoration-line: none;
-	color: $fontColorH;
+	.tarjetaTitulo{
+		font-size: 1.25rem;
+		font-weight: 500;
+		color:$background;
+		&:hover{text-decoration:none;color:$fontColorH;}
 	}
-	&:visited{
-	color:$fontColorV;
+	.tarjetaCuerpo{
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		min-height: 1px;
+		padding: .75rem 1.25rem;
+		}
+	.tarjetaSubtitulo{
+		font-size: 1rem;
+		font-weight: 400;
+		color:$menuBack;
 	}
-}
-/*Nota final*/
-.nota__final{
-	margin: 1em 0em auto;
-	padding: auto;
-	display: flex; 
-	flex-flow: row;
-	align-items: flex-start;
-	&--imagen{
-	width: 25rem;
-	height: 18rem;
+	.tarjetaTexto{
+		font-size: 1rem;
+		font-weight: 200;
+		letter-spacing: .40px;
 	}
-	&--texto{
-	margin: 0em 1em;
-	& a{
-	text-decoration: none;
+	.tarjetaLink{
+		font-size: 1rem;
+		font-weight: 200;
+		color:$fontColor;
+		margin: 2px 0px 2px 10px;
+		&:hover{
+		text-decoration-line: none;
+		color: $fontColorH;
+		}
+		&:visited{
+		color:$fontColorV;
 		}
 	}
 }
 .botonVerMas{
-	margin: 20px 20px 30px 50px;
-	padding: 10px 20px 10px 20px;
-	background-color: #EEE;
-	border-radius: 25px;
-	border-color: #004aad;
-	font-size: 18px;
-	font-weight: 500;
-	color: #004aad;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $fontColor;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid $fontColor;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 	&:hover{
-	background: linear-gradient(#004aad, #EEE);
-	border-radius: 25px;
-	border-color: #EEE;
+	background-color:$fontColor;
 	font-size: 18px;
 	font-weight: 500;
-	color: white;
+	color: $fontColorH;
 	}
 }
 /*CAMBIO A TABLET*/
@@ -164,23 +156,7 @@
 	}
 
 	/*Notas Secundarias*/
-	.notas__secundarias{
-		margin: 1em 0em auto;
-		padding: auto;
-		display: flex; 
-		flex-flow: row;
-		align-items: flex-start;
-		&--imagen{
-		width: 20rem;
-		height: 14rem;
-		}
-		&--texto{
-		margin: 0em 1em;
-		& a{
-		text-decoration: none;
-			}
-		}
-	}
+	.notaSecundaria{flex-direction: column;}
 	/*Tarjeta de Tutoriales*/
 	.tutorial__tarjeta{
 		width: 15rem;
