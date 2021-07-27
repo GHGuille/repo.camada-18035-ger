@@ -43,7 +43,7 @@
 	margin-bottom: .65rem;
 	}
 	.tituloSecundario{/*Para los titulos secundarios*/
-		font-size: 1.25rem;
+		font-size: 1.55rem;
 		margin-bottom: .40rem;
 	}
 	.texto{/*Para texto en general*/
@@ -57,75 +57,35 @@
 	}
 }
 @media all and (max-width: 768px){
-	.titulo__principal{/*Para los titulos principales*/
-		@include fTitulos;
-		font-size: 1.8rem;
-		font-weight: 500;
-	}
-	.titulo__secundario{/*Para los titulos secundarios*/
-		@include fTitulos;
-		font-size: 1.2rem;
-		font-weight: 400;
-	}
 	.texto{/*Para texto en general*/
-		font-size: 1.2rem;
+		font-size: 1rem;
 		font-weight: 300;
 		letter-spacing: .40px;
 		margin: 0px 0px 5px 0px;
 		padding: 2px 0px 2px 0px;
 		line-height: 1.5em;
 	}
-	.boton--leer{/*Para los Botones "leer mas"*/
-		font-size: 1em;
-		font-weight: 300;
-		color:$fontColor;
-		margin: 2px 0px 2px 10px;
-		&:hover{
-		text-decoration-line: none;
-		color: $fontColorH;
-		}
-		&:visited{
-		color:$fontColorV;
-		}
-	}
 }
 @media all and (max-width: 576px){
-	.titulo__principal{/*Para los titulos principales*/
-		@include fTitulos;
-		font-size: 1.8rem;
-		font-weight: 500;
-		&:hover{/*Para los titulos principales*/
-		color: $fontColorH;
-		}
+	.tituloPrincipal{/*Para los titulos principales*/
+	font-size: 1.35rem;
+	margin-bottom: .65rem;
 	}
-	.titulo__secundario{/*Para los titulos secundarios*/
-		@include fTitulos;
-		font-size: 1.2rem;
-		font-weight: 400;
-		&:hover{/*Para los titulos secundarios*/
-		color: $fontColorH;
-		}
+	.tituloSecundario{/*Para los titulos secundarios*/
+		font-size: 1.15rem;
+		margin-bottom: .40rem;
 	}
 	.texto{/*Para texto en general*/
-		font-size: 1.2rem;
+		font-size: 1rem;
 		font-weight: 300;
-		letter-spacing: .40px;
-		margin: 0px 0px 0px 10px;
+		letter-spacing: .30px;
+		margin: 0px 0px 5px 0px;
 		padding: 2px 0px 2px 0px;
-		margin: 0px 10px;
-		line-height: 1.5em;
+		line-height: 1em;
 	}
-	.boton--leer{/*Para los Botones "leer mas"*/
+	.botonLeer{/*Para los Botones "leer mas"*/
 		font-size: 1em;
 		font-weight: 300;
-		color:$fontColor;
-		margin: 2px 0px 2px 10px;
-		&:hover{
-		text-decoration-line: none;
-		color: $fontColorH;
-		}
-		&:visited{
-		color:$fontColorV;
-		}
+		
 	}
 }

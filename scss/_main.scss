@@ -43,12 +43,12 @@ body{
 		text-decoration: none;
 		list-style: none;
 		box-sizing: border-box;
-		-webkit-transition: all 0.2s ease-in-out;
-		transition: all 0.2s ease-in-out;
+		transition: color 0.15s ease-in-out;
 		&.active,&:hover{
-					color: $fontColorH;
-					transition: .5s;
-					}
+			font-size: 1.25rem;
+			font-weight: 500;
+			color: $fontColorH;
+			}
 		}
 	}
 }
@@ -131,12 +131,13 @@ label #menuMobile{
 			line-height:2.5rem;
 			display:inline-block;
 			text-align:center;
-			margin:0 8px;
 			color:$fontColor;
-			opacity:0.75;
-			&:hover {
-				color:$fontColorH;
-				opacity:0.9;
+			box-sizing: border-box;
+			transition: color 0.15s ease-in-out;
+			&:hover{
+			font-size: 1.75rem;
+			font-weight: 500;
+			color: $fontColorH;
 			}
 		}
 	}
@@ -152,9 +153,12 @@ label #menuMobile{
 		color:$fontColor;
 		text-decoration:none;
 		opacity:0.8;
-		&:hover {
+		box-sizing: border-box;
+		transition: color 0.15s ease-in-out;
+		&.active,&:hover{
+			font-size: 1.25rem;
+			font-weight: 500;
 			color: $fontColorH;
-			transition: .5s;
 			}
 		}	
 	}
@@ -177,6 +181,15 @@ label #menuMobile{
 	}
 }
 @media all and (max-width: 576px){
+	.piePagina {
+		padding:1.5rem 0;
+		.pieRedes {
+			padding-bottom:0;
+		}
+	}
+	.copyright {
+	margin:.5rem 0.5rem;
+}
 	.noMobile{
 		display: none;
 	}
