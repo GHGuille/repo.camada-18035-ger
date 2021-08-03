@@ -37,6 +37,10 @@
 	color:$fontColorH;
 	}
 }
+@media all and (max-width: 1200px){
+	.texto{/*Para texto en general*/
+		margin: 0px 0px 5px 0px;}
+}
 @media all and (max-width: 1118px){
 	.tituloPrincipal{/*Para los titulos principales*/
 	font-size: 1.75rem;
@@ -47,7 +51,6 @@
 		margin-bottom: .40rem;
 	}
 	.texto{/*Para texto en general*/
-		margin: 0px 0px 10px 0px;
 		line-height: 1.25em;
 	}
 	.botonLeer{/*Para los Botones "leer mas"*/

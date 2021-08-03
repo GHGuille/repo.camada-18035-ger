@@ -13,41 +13,40 @@ body{
   height: 5rem;
   width: 100%;
   	.encabezadoLogo{
-	color: $background;
-	font-size: 2.2rem;
-	font-weight: 800;
-	line-height: 5rem;
-	padding-left: 12%;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-		&.active,&:hover{
-					color: $fontColorH;
-					transition: .5s;
-					}
-	}
-	.encabezadoMenu{
-	float: right;
-	margin-right: 1.25rem;
-		.menuLink{
-		display: inline-block;
-		line-height: 5rem;
-		margin: 0 .31rem;
 		color: $background;
-		font-size: 1em;
-		font-weight: 500;
-		padding: 7px 13px;
-		text-transform: uppercase;
+		font-size: 2.2rem;
+		font-weight: 800;
+		line-height: 5rem;
+		padding-left: 12%;
 		text-decoration: none;
 		list-style: none;
 		box-sizing: border-box;
-		transition: color 0.15s ease-in-out;
+		transition: all 0.2s ease-in-out;
 		&.active,&:hover{
-			font-size: 1.25rem;
-			font-weight: 500;
 			color: $fontColorH;
+			transition: .5s;
+		}
+	}
+	.encabezadoMenu{
+		float: right;
+		margin-right: 1.25rem;
+		.menuLink{
+			display: inline-block;
+			line-height: 5rem;
+			margin: 0 .31rem;
+			color: $background;
+			font-size: 1em;
+			font-weight: 500;
+			padding: 7px 13px;
+			text-transform: uppercase;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;
+			transition: color 0.15s ease-in-out;
+			&.active,&:hover{
+				font-size: 1.25rem;
+				font-weight: 500;
+				color: $fontColorH;
 			}
 		}
 	}
@@ -57,12 +56,12 @@ body{
 	display: none;
 }
 label #menuMobile{
-  font-size: 1.9rem;
-  color: $background;
-  line-height: 5rem;
-  margin-right: 2.5rem;
-  cursor: pointer;
-  display: none;
+	font-size: 1.9rem;
+	color: $background;
+	line-height: 5rem;
+	margin-right: 2.5rem;
+	cursor: pointer;
+	display: none;
 }
 @media all and (max-width: 1118px){
 	.encabezado .encabezadoLogo{
@@ -176,7 +175,7 @@ label #menuMobile{
 	}
 }
 @media all and (max-width: 768px){
-	.noTab{
+	.noTablet{
 		display: none;
 	}
 }

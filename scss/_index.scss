@@ -59,11 +59,11 @@ img{
 	background-clip: border-box;
 	border: 1px solid rgba(0,0,0,.125);
 	border-radius: .25rem;
+	pointer-events: auto;
 	.tarjetaCabezera{
 		padding: .75rem 1.25rem;
 		margin-bottom: 0;
 		background-color: $menuBack;
-		border-bottom: 1px solid rgba(0,0,0,.125);
 		border-radius: .2rem .2rem 0 0;
 	}
 	.tarjetaTitulo{
@@ -85,7 +85,7 @@ img{
 	}
 	.tarjetaTexto{
 		font-size: 1rem;
-		font-weight: 200;
+		font-weight: 300;
 		letter-spacing: .40px;
 	}
 	.tarjetaLink{
@@ -101,7 +101,26 @@ img{
 		color:$fontColorV;
 		}
 	}
+	.tarjetaPie{
+		display: -ms-flexbox;
+	    display: flex;
+	    flex-wrap: wrap;
+	    align-items: center;
+	    justify-content: flex-end;
+	    padding: .75rem;
+	    border-radius: 0 0 .2rem .2rem;
+	}
+	.tarjetaBoton{
+		color: $fontColor;
+		background-color: transparent;
+		border: 1px solid $fontColor;
+		&:hover{
+			background-color:$fontColor;
+			color: $fontColorH;
+		}
+	}
 }
+
 .botonVerMas{
 	display: inline-block;
 	font-weight: 400;
@@ -125,6 +144,8 @@ img{
 	color: $fontColorH;
 	}
 }
+/*CAMBIO A LAPTOP*/
+@media all and (max-width: 1200px){.notaSecundaria{.notaParrafo{padding: .15rem 1rem .15rem 1rem;}}}
 /*CAMBIO A TABLET*/
 @media all and (max-width: 768px){.notaSecundaria{flex-direction: column;}}
 
