@@ -12,10 +12,19 @@
 	&::before, ::after{
 		box-sizing: border-box;
 	}
-	& .notaParrafo{
+	.imagenPrincipal{
+		flex-shrink: 0;
+		width: 100%;
+		vertical-align: middle;
+		border-style: none;
+		border-radius: 0.5rem;
+	}
+	.notaParrafo{
+		background-color: rgba(255, 255, 255,0.7);
 	    flex: 1 1 auto;
 		min-height: 1px;
 		padding: 1.25rem;
+		border-radius: 0 0 0.5rem 0.5rem;
 		a{text-decoration:none;}
 	}
 }
@@ -33,18 +42,19 @@
 	&::before, ::after{
 		box-sizing: border-box;
 	}
-	& .notaParrafo{
+	.imagenSecundaria{
+		flex-shrink: 0;
+		width: 100%;
+		vertical-align: middle;
+		border-style: none;
+		border-radius: 0.50rem 0 0 0.50rem;
+	}
+	.notaParrafo{
 		flex: 1 1 auto;
 		min-height: 1px;
 		padding: 1.25rem;
 		a{text-decoration:none;}
 	}
-}
-img{
-	flex-shrink: 0;
-	width: 100%;
-	vertical-align: middle;
-	border-style: none;
 }
 /*Tarjeta de Tutoriales*/
 .tarjetas{
@@ -144,10 +154,26 @@ img{
 	color: $fontColorH;
 	}
 }
+
 /*CAMBIO A LAPTOP*/
-@media all and (max-width: 1200px){.notaSecundaria{.notaParrafo{padding: .15rem 1rem .15rem 1rem;}}}
+@media all and (min-width: 1200px){
+	.notaPrincipal a{max-height: 270px}
+}
+@media all and (max-width: 1200px){
+	.notaPrincipal .imagenPrincipal{border-radius: 0.5rem 0.5rem 0 0;}
+	.notaSecundaria{.notaParrafo{padding: .15rem 1rem .15rem 1rem;}}
+}
+
 /*CAMBIO A TABLET*/
-@media all and (max-width: 768px){.notaSecundaria{flex-direction: column;}}
+@media all and (max-width: 768px){
+	.notaSecundaria{
+		flex-direction: column;
+		.imagenSecundaria{
+			border-radius: 0.50rem 0.50rem 0 0;
+		}
+	}
+
+}
 
 /*CAMBIO A CELULAR*/
 @media all and (max-width: 576px){}

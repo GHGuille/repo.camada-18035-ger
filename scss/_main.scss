@@ -169,6 +169,11 @@ label #menuMobile{
 	margin-bottom:0;
 	}
 }
+@media all and (min-width: 1119px){
+	.noDesktop{
+		display: none;
+	}
+}
 @media all and (max-width: 1118px){
 	.noLaptop{
 		display: none;
@@ -177,6 +182,9 @@ label #menuMobile{
 @media all and (max-width: 768px){
 	.noTablet{
 		display: none;
+	}
+	.tablet{
+		display: block;
 	}
 }
 @media all and (max-width: 576px){
