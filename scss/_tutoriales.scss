@@ -1,3 +1,139 @@
-.no--list{
-	list-style-type: none;
+/*tutorial de Tutoriales*/
+.tutoriales{
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 0.5rem;
+	pointer-events: auto;
+	.tutorialCabezera{
+		padding: .75rem 1.25rem;
+		margin-bottom: 0;
+		background-color: $menuBack;
+		border-radius: .5rem .5rem 0 0;
+	}
+	.tutorialCuerpo{
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		min-height: 1px;
+		padding: .75rem 1.25rem;
+		}
+	.tutorialTitulo{
+		font-size: 1.5rem;
+		font-weight: 500;
+		color:$background;
+		text-decoration:none;
+		margin:0;
+	}
+	.tutorialLista{
+		display: flex;
+		flex-direction: row;
+		.tutorialItem{
+			display: inline-block;
+			line-height: 1rem;
+			color: $fontColor;
+			font-size: 1em;
+			font-weight: 500;
+			margin: auto;
+			padding: 7px 13px;
+			text-transform: uppercase;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;
+			transition: color 0.15s ease-in-out;
+			&.active,&:hover{
+				color: $fontColorH;
+			}
+		}
+	}
+}
+.tutorialTexto{
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: .40px;
+}
+.tutorialCabSecundaria{
+	padding: 0.50rem 1rem;
+	margin-bottom: 0;
+	background-color: $backgroundTarjetas;
+	border-radius: .5rem .5rem 0 0;
+	border-bottom: 2px solid $menuBack;
+}
+.tutorialTitSecundario{
+	font-size: 1.25rem;
+	font-weight: 500;
+	color:$fontColorH;
+	margin:0;
+}
+.tutorialAcordion{
+	margin: 0 0.5rem 0.5rem 0.5rem;
+	.tutorialAcTarjeta{
+		position: relative;
+	    display: flex;
+	    flex-direction: column;
+	    min-width: 0;
+	    word-wrap: break-word;
+	    background-color: #fff;
+	    background-clip: border-box;
+	    border-bottom: none;
+	    border-radius: .25rem .25rem 0 0;
+	}
+	.tutorialAcCabezal1{
+		padding: 0.5rem 1rem;
+	    margin-bottom: 0;
+	    background-color:$background;
+	    border-bottom: 1px solid $fontColor;
+    	border-radius: 0.35rem 0.35rem 0 0;
+    }
+	.tutorialAcCabezal{
+		padding: 0.5rem 1rem;
+	    margin-bottom: 0;
+	    background-color:$background;
+	    border-bottom: 1px solid $fontColor;
+	}
+    .tutorialAcCabezalU{
+    	padding: 0.5rem 1rem;
+	    margin-bottom: 0;
+	    background-color:$background;
+	    border-bottom: none;
+    	border-radius: 0 0 0.35rem 0.35rem;
+    }
+	.tutorialAcTitulo{
+		display: inline-block;
+	    color: $fontColor;
+	    text-align: left;
+	    vertical-align: middle;
+	    user-select: none;
+	    background-color: transparent;
+	    border: 1px solid transparent;
+	    width: 100%;
+	    font-size: 1rem;
+	    font-weight: 500;
+	    line-height: 1.5;
+	    transition: color .15s ease-in-out,
+	    			background-color .15s ease-in-out,
+	    			border-color .15s ease-in-out,
+	    			box-shadow .15s ease-in-out;
+	    text-decoration: none;
+	    &:hover{
+	    	color:$fontColorH;
+	    }
+	}
+	.tutorialAcCuerpo{
+		flex: 1 1 auto;
+	    min-height: 1px;
+	    padding: 1rem;
+	}
+}
+
+
+
+@media all and (max-width: 520px){
+	.tutoriales .tutorialLista{flex-direction: column;}
 }

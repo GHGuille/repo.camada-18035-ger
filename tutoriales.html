@@ -1,133 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Tutoriales para herramientas tecnologicas</title>
+	<title>PRODUCTIVATE</title>
 	<meta charset=utf-8>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Seccion dedicada a mostrar formas de usar las herramientas digitales y sacarle el mayor provecho para nuestra productividad">
+	<meta name="description" content="Sitio dedicado a noticias del mundo de la tecnología, tutoriales para usar las herramientas tecnológicas actuales y mucho más">
+   <meta name="keywords"  content="TECNOLOGIA, PRODUCTIVIDAD, DESARROLLO, TUTORIALES, HERRAMIENTAS">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script src="https://kit.fontawesome.com/b5c6018167.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<!--comienzo encabezado-->
-	<header id="encabezado" class="encabezado__sitio container-fluid px-0 fixed-top">
-		<div class="container">
-			<nav class="row navbar navbar-expand-lg navbar-light">
-			  <a class="navbar-brand encabezado__sitio--logo col-10 col-lg-4" href="index.html"></a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse col-2 col-lg-6" id="navbarNavDropdown">
-			    <ul class="navbar-nav">
-			      <li class="nav-item active">
-			        <a class="menu" href="tutoriales.html">Tutoriales</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="menu" href="blog.html">Blog</a>
-			      </li>
-			      <li class="nav-item">
-			        <a type="button" class="menu" data-toggle="modal" data-target="#exampleModal1">
-  							Mis herramientas
-					</a><!--Prueba de boton modal-->
-			      </li>
-			      <li class="nav-item">
-			        <a type="button" class="menu" data-toggle="modal" data-target="#exampleModal1">
-  							Consultas
-					</a><!--Prueba de boton modal-->
-			      </li>
-			    </ul>
-			  </div>
-			</nav>
+	<nav class="encabezado fixed-top">
+      <input type="checkbox" id="check">
+      <label for="check" >
+        <i class="fas fa-ellipsis-v" id="menuMobile"></i>
+      </label>
+      <a class="encabezadoLogo" href="index.html">PRODUCTIVATE</a>
+      <div class="encabezadoMenu">
+        <a class="menuLink active" href="tutoriales.html">Tutoriales</a>
+        <a class="menuLink" href="blog.html">Blog</a>
+        <a type="button" class="menuLink" data-toggle="modal" data-target="#paginaConstruccion">Herramientas</a>
+        <a type="button" class="menuLink" data-toggle="modal" data-target="#paginaConstruccion">Contacto</a>
+      </div>
+    </nav>
+    <!--fin encabezado-->
+    <div class="container marginTop">
+        <div class="row">
+            <!--Tutoriales-->
+	        <div class="col-lg-12">
+	            <div class="mb-4 tutoriales">
+	                <div class="tutorialCabezera">
+	                	<p class="tutorialTitulo">Tutoriales</p>
+	                </div>
+	                <div class="tutorialCuerpo">
+	                	<p class="tutorialTexto">En esta seccion encontraras tutoriales para usar las herramientas online mas conocidas para que te ayuden a ser mas productivo</p>
+	                	<div class="tutorialLista">
+	                		<a class="tutorialItem"href="#gmail">Gmail</a>
+	                		<a class="tutorialItem"href="">Google Drive</a>
+	                		<a class="tutorialItem"href="">Calendar</a>
+	                		<a class="tutorialItem"href="">Notion</a>
+	                	</div>
+	                </div>
+	            </div>
+	            <!--Tutorial Gmail-->
+	            <div class="mb-4 tutoriales">
+	                <div id="gmail" class="tutorialCabSecundaria">
+	                	<p class="tutorialTitSecundario">Gmail</p>
+	                </div>
+	                <div class="tutorialCuerpo">
+	                	<p class="tutorialTexto">En esta seccion encontraras tutoriales para usar las herramientas online mas conocidas para que te ayuden a ser mas productivo</p>
+	                </div>
+	                <!--Tutorial Gmail Acordion-->
+	                <div class="accordion tutorialAcordion" id="accordionExample">
+	                <!--Tutorial Gmail Acordion 1-->	
+					  <div class="tutorialAcTarjeta">
+					    <div class="tutorialAcCabezal1" id="headingOne">
+					        <button class="tutorialAcTitulo" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Collapsible Group Item #1
+					        </button>
+					    </div>
+					    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+					      <div class="tutorialAcCuerpo tutorialTexto">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					 <!--fin Tutorial Gmail Acordion 1-->
+					 <!--Tutorial Gmail Acordion 2-->	
+					  <div class="tutorialAcTarjeta">
+					    <div class="tutorialAcCabezal" id="headingTwo">
+					        <button class="tutorialAcTitulo collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          Collapsible Group Item #2
+					        </button>
+					    </div>
+					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					      <div class="tutorialAcCuerpo tutorialTexto">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					 <!--fin Tutorial Gmail Acordion 2-->
+					 <!--Tutorial Gmail Acordion 3-->	
+					  <div class="tutorialAcTarjeta">
+					    <div class="tutorialAcCabezal" id="headingThree">
+					        <button class="tutorialAcTitulo collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Collapsible Group Item #3
+					        </button>
+					    </div>
+					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					      <div class="tutorialAcCuerpo tutorialTexto">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					 <!--fin Tutorial Gmail Acordion 3-->
+					 <!--Tutorial Gmail Acordion 4-->	
+					 <div class="tutorialAcTarjeta">
+					    <div class="tutorialAcCabezalU" id="headingFour">
+					        <button class="tutorialAcTitulo collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					          Collapsible Group Item #4
+					        </button>
+					    </div>
+					    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+					      <div class="tutorialAcCuerpo tutorialTexto">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					 <!--fin Tutorial Gmail Acordion 4-->
+	            	</div>
+	        	</div>
+			</div>
 		</div>
-	</header>
-	<!--fin encabezado-->
-	<div id="cuerpoPrincipal" class="cuerpo__principal"></div><!--solo para boton de regreso-->
-	<section class="container-fluid container-lg">
-		<div class="">
-			<p class="titulo__principal">Google Sheets</p>
-			<p class="titulo__secundario">Addons</p>
-			<p class="texto">En google se llama "addons" a pequeñas extensiones creadas, por terceros en su mayoria, para agregar funcionalidades de todo tipo.</p>
-			<p class="texto noTab noMobile">Google Sheets es uno de los productos donde mas partido se saca a estas herramientas ya que la tabla actua como base de datos pudiendo con estas extensiones crear todo tipo de sistema para facilitar la labor diaria de empresas y emprendedores</p>
-			<p class="texto noTab noMobile">Aqui encontraras una seleccion de las extensiones mas usadas en sheets.</p>
-		</div>
-		<div id="tutorialesS">
-			<h1 class="titulo__secundario">Addons: Combinacion de correo</h1>
-			<p class="texto noMobile">Una de las extensiones mas usada es la combinar correo, haciendo que sheets se convierta en una base de datos para enviar correos personalizados</p>
-			<p class="texto noMobile">Los mejores videos para aprender de esto:</p>
-			<ol>
-				<li class="no--list boton--leer"><a href="https://youtu.be/lPt5cAhnlFs">Enviar un correo electrónico en Gmail desde Google Sheets</a>- Juan S. Guzman</li>
-				<li class="no--list boton--leer"><a href="https://youtu.be/aQJulEXT7rQ">Enviar múltiples correos electrónicos en Google Sheets con un solo botón</a>- Juan S. Guzman</li>
-				<li class="no--list boton--leer"><a href="https://youtu.be/rNfHOp8OHeU">Enviar mails a partir de una plantilla en Google Sheets</a>- Juan S. Guzman</li>
-				<li class="no--list boton--leer"><a href="https://youtu.be/zefkA3J0XB4">Enviar un mail al momento de cambiar un valor en Google Sheets</a>- Juan S. Guzman</li>
-				<li class="no--list boton--leer"><a href="https://youtu.be/qpg1-FuwcX4">Enviar PDFs personalizados por mail a cada cliente o estudiante con Sheets y Google Apps Script</a>- Juan S. Guzman</li>
-			</ol>
-		</div>
-	</section>
-	<!--comienzo pie de pagina-->
-	<footer id="piePagina" class="pie__pagina container-fluid px-0">
-		<div class="container">
-			<nav class="row navbar navbar-expand-lg">
-			  <a class="navbar-brand pie__pagina--logo col-12 col-lg-4" href="index.html"></a>
-			  <div class="col-8 col-lg-6">
-					<div class="d-flex"><!--Redes Sociales del Blog--->
-						<button type="button" class="btn boton--redes" data-toggle="modal" data-target="#exampleModal">
-  							<i class="fab fa-facebook-square"></i>
-						</button><!--Prueba de boton modal-->
-						<button type="button" class="btn boton--redes" data-toggle="modal" data-target="#exampleModal">
-  							<i class="fab fa-instagram-square"></i>
-						</button>
-						<button type="button" class="btn boton--redes" data-toggle="modal" data-target="#exampleModal">
-  							<i class="fab fa-telegram"></i>
-						</button><!--Prueba de boton modal-->
-						<button type="button" class="btn boton--redes" data-toggle="modal" data-target="#exampleModal">
-  							<i class="fab fa-linkedin"></i>
-						</button>
-					</div>
-				</div>
-				<div class="col-4 col-lg-2">
-					<div class="backToTop ">
-						<a href="#cuerpoPrincipal"><i class="fas fa-arrow-up top"></i></a>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</footer> <!--fin pie de pagina-->
+	</div>
+    <!--comienza pie de pagina-->
+	<footer class="piePagina">
+        <div class="pieRedes">
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#modalRedes"><i class="fab fa-facebook-square"></i></a>
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#modalRedes"><i class="fab fa-instagram-square"></i></a>
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#modalRedes"><i class="fab fa-telegram"></i></a>
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#modalRedes"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="pieMenu noMobile">
+        	<a class="pieLink active" href="index.html">Inicio</a>
+	        <a class="pieLink" href="tutoriales.html">Tutoriales</a>
+	        <a class="pieLink" href="blog.html">Blog</a>
+	        <a type="button" class="pieLink" data-toggle="modal" data-target="#paginaConstruccion">Herramientas</a>
+	        <a type="button" class="pieLink" data-toggle="modal" data-target="#paginaConstruccion">Contacto</a>
+      	</div>
+        <p class="copyright">Productivate, una web realizada para proyecto de curso de HTML/CSS en CODER por Guillermo Reula © 2021</p>
+    </footer>
+	><!--fin pie de pagina-->
 	<!--Modal de paginas en construccion-->
-	<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="paginaConstruccion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <p class="titulo__secundario">Pagina en construccion</p>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
+	    <div class="tutorials">
+	      <div class="tutorialCabezera">
+	        <p class="tutorialTitulo">Pagina en construccion</p>
 	      </div>
-	      <div class="texto">
-	        Lo siento no llegue a construir todos los estilos de esta pagina, por lo que no quise que siguiera. Prometo tenerlo todo para la siguiente entrega. 
+	      <div class="tutorialCuerpo tutorialTexto">
+	        Proximamente te daremos el contenido buscado. Saludos.
 	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	      <div class="tutorialPie">
+	        <button type="button" class="btn tutorialBoton" data-dismiss="modal">Cerrar</button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
 	<!--Fin modal de paginas en construccion-->
 	<!--Modal de redes-->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="modalRedes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <p class="titulo__secundario">Pagina de red social</p>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
+	    <div class="tutorials">
+	      <div class="tutorialCabezera">
+	        <p class="tutorialTitulo">Pagina de red social</p>
 	      </div>
-	      <div class="texto">
-	        Esto te rediccionara a una pagina de red social.
+	      <div class="tutorialCuerpo tutorialTexto">
+	        Proximamente te daremos el contenido buscado. Saludos.
 	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	      <div class="tutorialPie">
+	        <button type="button" class="btn tutorialBoton" data-dismiss="modal">Cerrar</button>
 	      </div>
 	    </div>
 	  </div>

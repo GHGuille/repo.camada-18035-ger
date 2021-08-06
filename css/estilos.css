@@ -650,9 +650,177 @@ label #menuMobile {
 }
 
 /*CAMBIO A CELULAR*/
-/* line 1, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
-.no--list {
-  list-style-type: none;
+/*tutorial de Tutoriales*/
+/* line 2, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutoriales {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  pointer-events: auto;
+}
+
+/* line 15, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutoriales .tutorialCabezera {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #005ac5;
+  border-radius: .5rem .5rem 0 0;
+}
+
+/* line 21, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutoriales .tutorialCuerpo {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: .75rem 1.25rem;
+}
+
+/* line 27, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutoriales .tutorialTitulo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #EEE;
+  text-decoration: none;
+  margin: 0;
+}
+
+/* line 34, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutoriales .tutorialLista {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 37, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutoriales .tutorialLista .tutorialItem {
+  display: inline-block;
+  line-height: 1rem;
+  color: #0045a2;
+  font-size: 1em;
+  font-weight: 500;
+  margin: auto;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  transition: color 0.15s ease-in-out;
+}
+
+/* line 50, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutoriales .tutorialLista .tutorialItem.active, .tutoriales .tutorialLista .tutorialItem:hover {
+  color: #00c2a8;
+}
+
+/* line 56, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialTexto {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: .40px;
+}
+
+/* line 61, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialCabSecundaria {
+  padding: 0.50rem 1rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-radius: .5rem .5rem 0 0;
+  border-bottom: 2px solid #005ac5;
+}
+
+/* line 68, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialTitSecundario {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #00c2a8;
+  margin: 0;
+}
+
+/* line 74, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialAcordion {
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+/* line 76, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialAcordion .tutorialAcTarjeta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-bottom: none;
+  border-radius: .25rem .25rem 0 0;
+}
+
+/* line 87, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialAcordion .tutorialAcCabezal1 {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: #EEE;
+  border-bottom: 1px solid #0045a2;
+  border-radius: 0.35rem 0.35rem 0 0;
+}
+
+/* line 94, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialAcordion .tutorialAcCabezal {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: #EEE;
+  border-bottom: 1px solid #0045a2;
+}
+
+/* line 100, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialAcordion .tutorialAcCabezalU {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: #EEE;
+  border-bottom: none;
+  border-radius: 0 0 0.35rem 0.35rem;
+}
+
+/* line 107, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialAcordion .tutorialAcTitulo {
+  display: inline-block;
+  color: #0045a2;
+  text-align: left;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  text-decoration: none;
+}
+
+/* line 124, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialAcordion .tutorialAcTitulo:hover {
+  color: #00c2a8;
+}
+
+/* line 128, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialAcordion .tutorialAcCuerpo {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
+}
+
+@media all and (max-width: 520px) {
+  /* line 138, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+  .tutoriales .tutorialLista {
+    flex-direction: column;
+  }
 }
 
 /* line 2, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_blog.scss */
