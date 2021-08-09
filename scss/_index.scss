@@ -27,6 +27,13 @@
 		border-radius: 0 0 0.5rem 0.5rem;
 		a{text-decoration:none;}
 	}
+	.textoPrincipal{/*Para texto en general*/
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: .40px;
+	margin: 0px 0px 15px 0px;
+	line-height: 1.5em;
+}
 }
 /*Notas Secundarias*/
 .notaSecundaria{
@@ -56,104 +63,6 @@
 		a{text-decoration:none;}
 	}
 }
-/*Tarjeta de Tutoriales*/
-.tarjetas{
-	position: relative;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	min-width: 0;
-	word-wrap: break-word;
-	background-color: #fff;
-	background-clip: border-box;
-	border: 1px solid rgba(0,0,0,.125);
-	border-radius: .25rem;
-	pointer-events: auto;
-	.tarjetaCabezera{
-		padding: .75rem 1.25rem;
-		margin-bottom: 0;
-		background-color: $menuBack;
-		border-radius: .2rem .2rem 0 0;
-	}
-	.tarjetaTitulo{
-		font-size: 1.25rem;
-		font-weight: 500;
-		color:$background;
-		&:hover{text-decoration:none;color:$fontColorH;}
-	}
-	.tarjetaCuerpo{
-		-ms-flex: 1 1 auto;
-		flex: 1 1 auto;
-		min-height: 1px;
-		padding: .75rem 1.25rem;
-		}
-	.tarjetaSubtitulo{
-		font-size: 1rem;
-		font-weight: 400;
-		color:$menuBack;
-	}
-	.tarjetaTexto{
-		font-size: 1rem;
-		font-weight: 300;
-		letter-spacing: .40px;
-	}
-	.tarjetaLink{
-		font-size: 1rem;
-		font-weight: 200;
-		color:$fontColor;
-		margin: 2px 0px 2px 10px;
-		&:hover{
-		text-decoration-line: none;
-		color: $fontColorH;
-		}
-		&:visited{
-		color:$fontColorV;
-		}
-	}
-	.tarjetaPie{
-		display: -ms-flexbox;
-	    display: flex;
-	    flex-wrap: wrap;
-	    align-items: center;
-	    justify-content: flex-end;
-	    padding: .75rem;
-	    border-radius: 0 0 .2rem .2rem;
-	}
-	.tarjetaBoton{
-		color: $fontColor;
-		background-color: transparent;
-		border: 1px solid $fontColor;
-		&:hover{
-			background-color:$fontColor;
-			color: $fontColorH;
-		}
-	}
-}
-
-.botonVerMas{
-	display: inline-block;
-	font-weight: 400;
-	line-height: 1.5;
-	color: $fontColor;
-	text-align: center;
-	text-decoration: none;
-	vertical-align: middle;
-	cursor: pointer;
-	user-select: none;
-	background-color: transparent;
-	border: 1px solid $fontColor;
-	padding: 0.375rem 0.75rem;
-	font-size: 1rem;
-	border-radius: 0.25rem;
-	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-	&:hover{
-	background-color:$fontColor;
-	font-size: 18px;
-	font-weight: 500;
-	color: $fontColorH;
-	}
-} 
 
 /*CAMBIO A LAPTOP*/
 @media all and (min-width: 1200px){

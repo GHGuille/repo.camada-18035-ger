@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>PRODUCTIVATE</title>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Sitio dedicado a noticias del mundo de la tecnología, tutoriales para usar las herramientas tecnológicas actuales y mucho más">
+   <meta name="keywords"  content="TECNOLOGIA, PRODUCTIVIDAD, DESARROLLO, TUTORIALES, HERRAMIENTAS">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="https://kit.fontawesome.com/b5c6018167.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--comienzo encabezado-->
+	<nav class="encabezado fixed-top">
+      <input type="checkbox" id="check">
+      <label for="check" >
+        <i class="fas fa-ellipsis-v" id="menuMobile"></i>
+      </label>
+      <a class="encabezadoLogo" href="index.html">PRODUCTIVATE</a>
+      <div class="encabezadoMenu">
+        <a class="menuLink" href="tutoriales.html">Tutoriales</a>
+        <a class="menuLink" href="blog.html">Blog</a>
+        <a class="menuLink active" href="herramientas.html">Herramientas</a>
+        <a class="menuLink" href="contacto.html">Contacto</a>
+      </div>
+    </nav><!--fin encabezado-->
+	<div class="container marginTop">
+        <div class="row"> <!--herramientas-->
+	        <div class="col-lg-3">
+	            <div class="mb-4 tutoriales">
+	                <div class="tutorialCabezera">
+	                	<p class="tutorialTitulo">Herramientas</p>
+	                </div>
+	                <div class="tutorialCuerpo">
+	                	<p class="texto">Nuestras herramientas de uso diario para llevar a cabo nuestro trabajo y con las que hacemos este blog para ustedes.</p>
+	                	<div class="tutorialLista listaIndex">
+	                		<a class="itemIndex"href="#equipos">Equipos</a>
+	                		<a class="itemIndex"href="#aplicaciones">aplicaciones</a>
+	                	</div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="col-lg-9">
+	            <div id="equipos" class="ancla"></div>
+	            <div class="mb-4 tutoriales"><!--Equipos-->
+	                <div class="tutorialCabSecundaria">
+	                	<p class="tutorialTitSecundario">Equipos</p>
+	                </div>
+	                <div class="tutorialCuerpo">
+	                	<p class="texto">Nuestros equipos, reviews de los mismos y donde comprarlos.</p>
+	                </div>
+	                <div class="container">
+	                	<div class="row">
+	                		<div class="col-lg-4">
+	                			<div class="mb-3 card">
+								  <img src="..." class="card-img-top" alt="...">
+								  <div class="card-body">
+								    <h5 class="card-title">Card title</h5>
+								    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								    <a href="#" class="btn btn-primary">Go somewhere</a>
+								  </div>
+								</div>
+	                		</div>
+	                		<div class="col-lg-4">
+	                			<div class="mb-3 card">
+								  <img src="..." class="card-img-top" alt="...">
+								  <div class="card-body">
+								    <h5 class="card-title">Card title</h5>
+								    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								    <a href="#" class="btn btn-primary">Go somewhere</a>
+								  </div>
+								</div>
+	                		</div>
+	                		<div class="col-lg-4">
+	                			<div class="mb-3 card">
+								  <img src="..." class="card-img-top" alt="...">
+								  <div class="card-body">
+								    <h5 class="card-title">Card title</h5>
+								    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								    <a href="#" class="btn btn-primary">Go somewhere</a>
+								  </div>
+								</div>
+	                		</div>
+	                	</div>
+	                </div>    
+		        </div>	
+			</div>
+		</div>
+	</div>
+    <!--comienza pie de pagina-->
+	<footer class="piePagina">
+        <div class="pieRedes">
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#modalRedes"><i class="fab fa-facebook-square"></i></a>
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#modalRedes"><i class="fab fa-instagram-square"></i></a>
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#modalRedes"><i class="fab fa-telegram"></i></a>
+        	<a type="button" class="redesLink" data-toggle="modal" data-target="#modalRedes"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="pieMenu noMobile">
+        	<a class="pieLink" href="index.html">Inicio</a>
+	        <a class="pieLink" href="tutoriales.html">Tutoriales</a>
+	        <a class="pieLink" href="blog.html">Blog</a>
+	        <a class="pieLink active" href="herramientas.html">Herramientas</a>
+	        <a class="pieLink" href="contacto.html">Contacto</a>
+      	</div>
+        <p class="copyright">Productivate, una web realizada para proyecto de curso de HTML/CSS en CODER por Guillermo Reula © 2021</p>
+    </footer>
+	<!--fin pie de pagina-->
+	<!--Modal de redes-->
+	<div class="modal fade" id="modalRedes" tabindex="-1" aria-labelledby="modalRedesLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modalContenido">
+	      <div class="modalEncabezado">
+	        <h5 class="modalTitulo" id="modalRedesLabel">Pagina de redes</h5>
+	      </div>
+	      <div class="modalCuerpo">
+	        <p class="texto"> Proximamente esto te redireccionara a nuestras redes sociales para que veas mas contenido que tenemos para ti. Gracias por tu paciencia.</p>
+	      </div>
+	      <div class="modalPie">
+	        <button type="button" class="boton" data-dismiss="modal" aria-label="Close">Cerrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!--Fin modal de redes-->
+ 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

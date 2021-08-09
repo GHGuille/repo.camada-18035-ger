@@ -21,8 +21,8 @@
       <div class="encabezadoMenu">
         <a class="menuLink" href="tutoriales.html">Tutoriales</a>
         <a class="menuLink" href="blog.html">Blog</a>
-        <a type="button" class="menuLink" data-toggle="modal" data-target="#paginaConstruccion">Herramientas</a>
-        <a type="button" class="menuLink" data-toggle="modal" data-target="#paginaConstruccion">Contacto</a>
+        <a class="menuLink" href="herramientas.html">Herramientas</a>
+        <a class="menuLink" href="contacto.html">Contacto</a>
       </div>
     </nav>
     <!--fin encabezado-->
@@ -36,8 +36,8 @@
                         <a href="https://www.xataka.com/pro/como-tomar-notas-reuniones-9-herramientas-buenas-practicas" rel="nofollow noreferrer noopener">
 							<h5 class="tituloPrincipal">Cómo tomar notas en las reuniones: 9 herramientas y buenas prácticas</h5>
 						</a>
-                        <p class="texto noMobile">A veces odiadas y muchas veces necesarias, las reuniones son el pan nuestro de cada día en los entornos laborales.</p>
-						<p class="texto">hoy les compartimos una seria de herramientas y buenas practicas para llevaras a cabo y no perderse en la reunion</p>
+                        <p class="textoPrincipal noMobile">A veces odiadas y muchas veces necesarias, las reuniones son el pan nuestro de cada día en los entornos laborales.</p>
+						<p class="textoPrincipal">hoy les compartimos una seria de herramientas y buenas practicas para llevaras a cabo y no perderse en la reunion</p>
 						<a class="botonLeer" href="https://www.xataka.com/pro/como-tomar-notas-reuniones-9-herramientas-buenas-practicas" rel="nofollow noreferrer noopener">Xataka Pro <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -85,18 +85,22 @@
 	                    </div>
 				    </div>
 				</div>
-                <button class="botonVerMas">Ver mas notas</button>
+                <button class="boton">Ver mas notas</button>
             </div>
 	        <!-- Side widgets-->
 	        <div class="col-lg-3">
-	            <div class="mb-4 tarjetas">
-	                <div class="tarjetaCabezera">
-	                	<a class="tarjetaTitulo" href="tutoriales.html">Tutoriales</a>
+	            <div class="mb-4 tutoriales">
+	                <div class="tutorialCabezera">
+	                	<p class="tutorialTitulo">Tutoriales</p>
 	                </div>
-	                <div class="tarjetaCuerpo">
-	                	<p class="tarjetaTexto">Tutoriales para ser mas productivo</p>
-	                	<h6 class="tarjetaSubtitulo"> Google Sheets</h6>
-	                	<a type="button" class="tarjetaLink" data-toggle="modal" data-target="#paginaConstruccion">Combinar correo</a>
+	                <div class="tutorialCuerpo">
+	                	<p class="texto">En esta seccion encontraras tutoriales para usar las herramientas online mas conocidas para que te ayuden a ser mas productivo</p>
+	                	<div class="tutorialLista listaIndex">
+	                		<a class="itemIndex"href="#gmail">Gmail</a>
+	                		<a class="itemIndex"href="">Google Drive</a>
+	                		<a class="itemIndex"href="">Calendar</a>
+	                		<a class="itemIndex"href="">Notion</a>
+	                	</div>
 	                </div>
 	            </div>
 	        </div>
@@ -114,41 +118,24 @@
         	<a class="pieLink active" href="index.html">Inicio</a>
 	        <a class="pieLink" href="tutoriales.html">Tutoriales</a>
 	        <a class="pieLink" href="blog.html">Blog</a>
-	        <a type="button" class="pieLink" data-toggle="modal" data-target="#paginaConstruccion">Herramientas</a>
-	        <a type="button" class="pieLink" data-toggle="modal" data-target="#paginaConstruccion">Contacto</a>
+	        <a class="pieLink" href="herramientas.html">Herramientas</a>
+	        <a class="pieLink" href="contacto.html">Contacto</a>
       	</div>
         <p class="copyright">Productivate, una web realizada para proyecto de curso de HTML/CSS en CODER por Guillermo Reula © 2021</p>
     </footer>
-	><!--fin pie de pagina-->
-	<!--Modal de paginas en construccion-->
-	<div class="modal fade" id="paginaConstruccion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="tarjetas">
-	      <div class="tarjetaCabezera">
-	        <p class="tarjetaTitulo">Pagina en construccion</p>
-	      </div>
-	      <div class="tarjetaCuerpo tarjetaTexto">
-	        Proximamente te daremos el contenido buscado. Saludos.
-	      </div>
-	      <div class="tarjetaPie">
-	        <button type="button" class="btn tarjetaBoton" data-dismiss="modal">Cerrar</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<!--Fin modal de paginas en construccion-->
+	<!--fin pie de pagina-->
 	<!--Modal de redes-->
-	<div class="modal fade" id="modalRedes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="modalRedes" tabindex="-1" aria-labelledby="modalRedesLabel" aria-hidden="true">
 	  <div class="modal-dialog">
-	    <div class="tarjetas">
-	      <div class="tarjetaCabezera">
-	        <p class="tarjetaTitulo">Pagina de red social</p>
+	    <div class="modalContenido">
+	      <div class="modalEncabezado">
+	        <h5 class="modalTitulo" id="modalRedesLabel">Pagina de redes</h5>
 	      </div>
-	      <div class="tarjetaCuerpo tarjetaTexto">
-	        Proximamente te daremos el contenido buscado. Saludos.
+	      <div class="modalCuerpo">
+	        <p class="texto"> Proximamente esto te redireccionara a nuestras redes sociales para que veas mas contenido que tenemos para ti. Gracias por tu paciencia.</p>
 	      </div>
-	      <div class="tarjetaPie">
-	        <button type="button" class="btn tarjetaBoton" data-dismiss="modal">Cerrar</button>
+	      <div class="modalPie">
+	        <button type="button" class="boton" data-dismiss="modal" aria-label="Close">Cerrar</button>
 	      </div>
 	    </div>
 	  </div>

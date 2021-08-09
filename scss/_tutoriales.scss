@@ -52,23 +52,47 @@
 			}
 		}
 	}
+	.listaIndex{
+		display: flex;
+		flex-flow: column wrap;
+		align-content: flex-start;
+		.itemIndex{
+			display: inline-block;
+			line-height: 1rem;
+			color: $fontColor;
+			font-size: 1em;
+			font-weight: 500;
+			padding: 7px 13px;
+			text-align: left;
+			text-transform: uppercase;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;
+			transition: color 0.15s ease-in-out;
+			&.active,&:hover{
+				color: $fontColorH;
+			}
+		}
+	}
 }
-.tutorialTexto{
-	font-size: 1rem;
-	font-weight: 300;
-	letter-spacing: .40px;
-}
+.ancla:before {       
+  display: block;       
+  content: " ";       
+  margin-top: -120px;       
+  height: 120px;       
+  visibility: hidden; 
+} 
 .tutorialCabSecundaria{
-	padding: 0.50rem 1rem;
+	max-height: 60px;
+	padding: 1rem 1.25rem;
 	margin-bottom: 0;
 	background-color: $backgroundTarjetas;
 	border-radius: .5rem .5rem 0 0;
-	border-bottom: 2px solid $menuBack;
 }
 .tutorialTitSecundario{
 	font-size: 1.25rem;
 	font-weight: 500;
-	color:$fontColorH;
+	color:$fontColor;
 	margin:0;
 }
 .tutorialAcordion{
@@ -131,8 +155,6 @@
 	    padding: 1rem;
 	}
 }
-
-
 
 @media all and (max-width: 520px){
 	.tutoriales .tutorialLista{flex-direction: column;}
