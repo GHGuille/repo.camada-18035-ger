@@ -1,10 +1,65 @@
 .contactoEncabezado {
     color: $fontColor;
-    font-size: 27px;
+    font-size: 2rem;
     padding: 10px;
 }
 
 .contactoIcono {
     font-size: 35px;
     color: $fontColor;
+}
+.contactoTexto{
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: .40px;
+	line-height: 1.5em;
+	padding-right: 1rem;
+}
+.palancaContacto {
+	height: 25px;
+	width: 50px; 
+	background: $menuBack; 
+	border-radius: 50px; 
+	position: relative;
+} 
+.palancaContacto input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	appearance: none;
+}
+.palancaContacto input::before{
+	content:"";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 75%;
+	background: $background;
+	border-radius: 50px;
+}
+.palancaContacto input::after{
+	content:"";
+	position: absolute;
+	top: 50%;
+	transform: translate(50%, -50%);
+	width: 15px;
+	height: 15px;
+	background: $menuBack;
+	opacity: 0.4;
+	border-radius: 50px;
+	transition: all 0.4s;
+}
+.palancaContacto input:checked::after{
+	transform: translate(170%, -50%);
+	opacity: 1;
+}
+@media all and (max-width: 576px){
+	.contactoTexto{
+		font-size: .75rem;
+		letter-spacing: .30px;
+		line-height: 1.25em;
+	}
 }

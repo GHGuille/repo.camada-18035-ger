@@ -338,12 +338,39 @@ label #menuMobile {
 }
 
 /*especiales*/
-/* line 267, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 268, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+.publicidad {
+  background: url("../media/publicidad-lg.png") no-repeat;
+  width: 70em;
+  height: 3.125em;
+  margin: 1em;
+  flex-grow: 1;
+}
+
+@media all and (max-width: 768px) {
+  /* line 268, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  .publicidad {
+    background: url("../media/publicidad-md.png") no-repeat;
+    width: 46.249em;
+    height: 3.125em;
+  }
+}
+
+@media all and (max-width: 576px) {
+  /* line 268, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  .publicidad {
+    background: url("../media/publicidad-sm.png") no-repeat;
+    width: 35em;
+    height: 3.125em;
+  }
+}
+
+/* line 285, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .marginTop {
   margin-top: 7rem;
 }
 
-/* line 270, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 288, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .marginBottom {
   margin-bottom: 2rem;
 }
@@ -801,37 +828,24 @@ label #menuMobile {
   }
 }
 
-/* line 2, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_blog.scss */
-.publicidad {
-  background: url("../media/publicidad-lg.png") no-repeat;
-  width: 70em;
-  height: 3.125em;
-  margin: 1em;
-  flex-grow: 1;
-}
-
-@media all and (max-width: 768px) {
-  /* line 2, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_blog.scss */
-  .publicidad {
-    background: url("../media/publicidad-md.png") no-repeat;
-    width: 46.249em;
-    height: 3.125em;
-  }
-}
-
-@media all and (max-width: 576px) {
-  /* line 2, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_blog.scss */
-  .publicidad {
-    background: url("../media/publicidad-sm.png") no-repeat;
-    width: 35em;
-    height: 3.125em;
-  }
+/* line 1, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_herramientas.scss */
+.herramintaTarjeta {
+  padding: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #e3e3e3;
+  border-radius: .35rem;
 }
 
 /* line 1, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_contacto.scss */
 .contactoEncabezado {
   color: #0045a2;
-  font-size: 27px;
+  font-size: 2rem;
   padding: 10px;
 }
 
@@ -839,6 +853,75 @@ label #menuMobile {
 .contactoIcono {
   font-size: 35px;
   color: #0045a2;
+}
+
+/* line 11, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_contacto.scss */
+.contactoTexto {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: .40px;
+  line-height: 1.5em;
+  padding-right: 1rem;
+}
+
+/* line 18, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_contacto.scss */
+.palancaContacto {
+  height: 25px;
+  width: 50px;
+  background: #0045a2;
+  border-radius: 50px;
+  position: relative;
+}
+
+/* line 25, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_contacto.scss */
+.palancaContacto input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  appearance: none;
+}
+
+/* line 32, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_contacto.scss */
+.palancaContacto input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 75%;
+  background: #f0f3ff;
+  border-radius: 50px;
+}
+
+/* line 43, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_contacto.scss */
+.palancaContacto input::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 15px;
+  height: 15px;
+  background: #0045a2;
+  opacity: 0.4;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+/* line 55, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_contacto.scss */
+.palancaContacto input:checked::after {
+  transform: translate(170%, -50%);
+  opacity: 1;
+}
+
+@media all and (max-width: 576px) {
+  /* line 60, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_contacto.scss */
+  .contactoTexto {
+    font-size: .75rem;
+    letter-spacing: .30px;
+    line-height: 1.25em;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
