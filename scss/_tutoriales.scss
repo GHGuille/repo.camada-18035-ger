@@ -12,6 +12,7 @@
 	border: 1px solid rgba(0,0,0,.125);
 	border-radius: 0.5rem;
 	pointer-events: auto;
+	z-index: 90;
 	.tutorialCabezera{
 		padding: .75rem 1.25rem;
 		margin-bottom: 0;
@@ -75,12 +76,15 @@
 		}
 	}
 }
+.ancla{
+	z-index: 10; 
+}
 .ancla:before {       
   display: block;       
   content: " ";       
   margin-top: -120px;       
   height: 120px;       
-  visibility: hidden; 
+  visibility: hidden;
 } 
 .tutorialCabSecundaria{
 	max-height: 60px;
@@ -132,6 +136,7 @@
 		display: inline-block;
 	    color: $fontColor;
 	    text-align: left;
+	    text-transform: uppercase;
 	    vertical-align: middle;
 	    user-select: none;
 	    background-color: transparent;
@@ -153,6 +158,9 @@
 		flex: 1 1 auto;
 	    min-height: 1px;
 	    padding: 1rem;
+	}
+	.margenLista li{
+		margin: 0 0 0 1rem;
 	}
 }
 

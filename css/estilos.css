@@ -19,9 +19,10 @@ body {
   background: #0045a2;
   height: 5rem;
   width: 100%;
+  z-index: 100;
 }
 
-/* line 15, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 16, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .encabezado .encabezadoLogo {
   color: #f7f8fa;
   font-size: 2.2rem;
@@ -34,25 +35,25 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 25, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 26, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .encabezado .encabezadoLogo.active, .encabezado .encabezadoLogo:hover {
   color: #00c2a8;
   transition: .5s;
 }
 
-/* line 30, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 31, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .encabezado .encabezadoMenu {
   float: right;
   margin-right: 1.25rem;
 }
 
-/* line 33, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 34, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .encabezado .encabezadoMenu .menuLink {
   display: inline-block;
   line-height: 5rem;
   margin: 0 .31rem;
   color: #f7f8fa;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   padding: 7px 13px;
   text-transform: uppercase;
@@ -62,20 +63,20 @@ body {
   transition: color 0.15s ease-in-out;
 }
 
-/* line 46, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 47, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .encabezado .encabezadoMenu .menuLink.active, .encabezado .encabezadoMenu .menuLink:hover {
   font-size: 1.25rem;
   font-weight: 500;
   color: #00c2a8;
 }
 
-/* line 54, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 55, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 #check {
   float: right;
   display: none;
 }
 
-/* line 58, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 59, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 label #menuMobile {
   font-size: 1.9rem;
   color: #f7f8fa;
@@ -86,41 +87,43 @@ label #menuMobile {
 }
 
 @media all and (max-width: 1118px) {
-  /* line 67, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 69, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .encabezado .encabezadoLogo {
+    font-size: 2rem;
     padding-left: 8%;
+  }
+  /* line 73, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  .encabezado .encabezadoMenu {
+    margin-right: 0rem;
+  }
+  /* line 75, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  .encabezado .encabezadoMenu .menuLink {
+    font-size: 1rem;
+    margin: 0 .5rem;
+    padding: 0;
   }
 }
 
 @media (max-width: 944px) {
-  /* line 73, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 85, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .encabezado .encabezadoLogo {
     font-size: 1.8rem;
     font-weight: 800;
     padding-left: 4%;
   }
-  /* line 78, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
-  .encabezado .encabezadoMenu {
-    margin-right: 0rem;
-  }
-  /* line 80, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
-  .encabezado .encabezadoMenu .menuLink {
-    font-size: 1rem;
-    padding: 7px 5px;
-  }
 }
 
 @media (max-width: 860px) {
-  /* line 88, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 93, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   label {
     float: right;
   }
-  /* line 90, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 95, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   label #menuMobile {
     display: block;
     margin-right: 1rem;
   }
-  /* line 95, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 100, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .encabezado .encabezadoMenu {
     position: fixed;
     width: 100%;
@@ -130,26 +133,26 @@ label #menuMobile {
     text-align: center;
     transition: all .5s;
   }
-  /* line 103, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 108, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .encabezado .encabezadoMenu .menuLink {
     display: block;
     margin: 3rem 0;
     line-height: 1.9rem;
     font-size: 1.25rem;
   }
-  /* line 110, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 115, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   #check:checked ~ .encabezadoMenu {
     left: 0;
     z-index: 1030;
   }
-  /* line 114, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 119, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   #menuMobile:hover {
     color: #00c2a8;
     transition: .5s;
   }
 }
 
-/* line 119, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 124, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .boton {
   display: inline-block;
   line-height: 1.5;
@@ -168,7 +171,7 @@ label #menuMobile {
   transition: color 0.25s ease-in-out,  background-color 0.25s ease-in-out;
 }
 
-/* line 136, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 141, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .boton:hover {
   background-color: #0045a2;
   font-size: 1rem;
@@ -177,19 +180,19 @@ label #menuMobile {
 }
 
 /*Estilos de Pie de pagina*/
-/* line 144, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 149, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .piePagina {
   padding: 2.5rem 0;
   background-color: #ffffff;
 }
 
-/* line 147, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 152, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .piePagina .pieRedes {
   text-align: center;
   padding-bottom: 1.6rem;
 }
 
-/* line 150, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 155, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .piePagina .pieRedes .redesLink {
   font-size: 1.5rem;
   width: 2.5rem;
@@ -202,14 +205,14 @@ label #menuMobile {
   transition: color 0.15s ease-in-out;
 }
 
-/* line 160, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 165, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .piePagina .pieRedes .redesLink:hover {
   font-size: 1.75rem;
   font-weight: 500;
   color: #00c2a8;
 }
 
-/* line 167, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 172, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .piePagina .pieMenu {
   padding: 0;
   list-style: none;
@@ -219,7 +222,7 @@ label #menuMobile {
   margin-bottom: 0;
 }
 
-/* line 174, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 179, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .piePagina .pieMenu .pieLink {
   padding: 0 10px;
   color: #0045a2;
@@ -229,14 +232,14 @@ label #menuMobile {
   transition: color 0.15s ease-in-out;
 }
 
-/* line 181, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 186, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .piePagina .pieMenu .pieLink.active, .piePagina .pieMenu .pieLink:hover {
   font-size: 1.25rem;
   font-weight: 500;
   color: #00c2a8;
 }
 
-/* line 188, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 193, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .piePagina .copyright {
   margin: 1rem 0.5rem;
   text-align: center;
@@ -245,7 +248,7 @@ label #menuMobile {
   margin-bottom: 0;
 }
 
-/* line 196, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 201, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .modalContenido {
   position: relative;
   display: flex;
@@ -259,7 +262,7 @@ label #menuMobile {
   outline: 0;
 }
 
-/* line 207, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 212, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .modalContenido .modalEncabezado {
   display: flex;
   align-items: flex-start;
@@ -269,21 +272,21 @@ label #menuMobile {
   border-radius: .5rem .5rem 0 0;
 }
 
-/* line 214, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 219, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .modalContenido .modalEncabezado .modalTitulo {
   color: #f7f8fa;
   margin-bottom: 0;
   line-height: 1.5;
 }
 
-/* line 220, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 225, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .modalContenido .modalCuerpo {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
 }
 
-/* line 225, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 230, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .modalContenido .modalPie {
   display: flex;
   flex-wrap: wrap;
@@ -294,83 +297,56 @@ label #menuMobile {
 }
 
 @media all and (min-width: 1119px) {
-  /* line 235, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 240, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .noDesktop {
     display: none;
   }
 }
 
 @media all and (max-width: 1118px) {
-  /* line 240, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 245, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .noLaptop {
     display: none;
   }
 }
 
 @media all and (max-width: 768px) {
-  /* line 245, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 250, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .noTablet {
     display: none;
   }
-  /* line 248, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 253, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .tablet {
     display: block;
   }
 }
 
 @media all and (max-width: 576px) {
-  /* line 253, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 258, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .piePagina {
     padding: 1.5rem 0;
   }
-  /* line 255, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 260, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .piePagina .pieRedes {
     padding-bottom: 0;
   }
-  /* line 259, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 264, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .copyright {
     margin: .5rem 0.5rem;
   }
-  /* line 262, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+  /* line 267, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
   .noMobile {
     display: none;
   }
 }
 
 /*especiales*/
-/* line 268, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
-.publicidad {
-  background: url("../media/publicidad-lg.png") no-repeat;
-  width: 70em;
-  height: 3.125em;
-  margin: 1em;
-  flex-grow: 1;
-}
-
-@media all and (max-width: 768px) {
-  /* line 268, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
-  .publicidad {
-    background: url("../media/publicidad-md.png") no-repeat;
-    width: 46.249em;
-    height: 3.125em;
-  }
-}
-
-@media all and (max-width: 576px) {
-  /* line 268, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
-  .publicidad {
-    background: url("../media/publicidad-sm.png") no-repeat;
-    width: 35em;
-    height: 3.125em;
-  }
-}
-
-/* line 285, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 272, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .marginTop {
   margin-top: 7rem;
 }
 
-/* line 288, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
+/* line 275, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_main.scss */
 .marginBottom {
   margin-bottom: 2rem;
 }
@@ -576,49 +552,48 @@ label #menuMobile {
 .notaSecundaria .imagenSecundaria {
   flex-shrink: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   vertical-align: middle;
   border-style: none;
   border-radius: 0.50rem 0 0 0.50rem;
 }
 
-/* line 59, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
+/* line 61, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
 .notaSecundaria .notaParrafo {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
 }
 
-/* line 63, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
+/* line 65, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
 .notaSecundaria .notaParrafo a {
   text-decoration: none;
+  height: 100%;
 }
 
 /*CAMBIO A LAPTOP*/
 @media all and (min-width: 1200px) {
-  /* line 69, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
+  /* line 71, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
   .notaPrincipal a {
     max-height: 270px;
   }
 }
 
 @media all and (max-width: 1200px) {
-  /* line 72, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
+  /* line 74, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
   .notaPrincipal .imagenPrincipal {
     border-radius: 0.5rem 0.5rem 0 0;
-  }
-  /* line 73, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
-  .notaSecundaria .notaParrafo {
-    padding: .15rem 1rem .15rem 1rem;
   }
 }
 
 /*CAMBIO A TABLET*/
 @media all and (max-width: 768px) {
-  /* line 78, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
+  /* line 79, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
   .notaSecundaria {
     flex-direction: column;
   }
-  /* line 80, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
+  /* line 81, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_index.scss */
   .notaSecundaria .imagenSecundaria {
     border-radius: 0.50rem 0.50rem 0 0;
   }
@@ -640,9 +615,10 @@ label #menuMobile {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
   pointer-events: auto;
+  z-index: 90;
 }
 
-/* line 15, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 16, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutoriales .tutorialCabezera {
   padding: .75rem 1.25rem;
   margin-bottom: 0;
@@ -650,7 +626,7 @@ label #menuMobile {
   border-radius: .5rem .5rem 0 0;
 }
 
-/* line 21, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 22, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutoriales .tutorialCuerpo {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -658,7 +634,7 @@ label #menuMobile {
   padding: .75rem 1.25rem;
 }
 
-/* line 27, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 28, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutoriales .tutorialTitulo {
   font-size: 1.5rem;
   font-weight: 500;
@@ -667,13 +643,13 @@ label #menuMobile {
   margin: 0;
 }
 
-/* line 34, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 35, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutoriales .tutorialLista {
   display: flex;
   flex-direction: row;
 }
 
-/* line 37, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 38, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutoriales .tutorialLista .tutorialItem {
   display: inline-block;
   line-height: 1rem;
@@ -689,19 +665,19 @@ label #menuMobile {
   transition: color 0.15s ease-in-out;
 }
 
-/* line 50, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 51, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutoriales .tutorialLista .tutorialItem.active, .tutoriales .tutorialLista .tutorialItem:hover {
   color: #00c2a8;
 }
 
-/* line 55, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 56, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutoriales .listaIndex {
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
 }
 
-/* line 59, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 60, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutoriales .listaIndex .itemIndex {
   display: inline-block;
   line-height: 1rem;
@@ -717,12 +693,17 @@ label #menuMobile {
   transition: color 0.15s ease-in-out;
 }
 
-/* line 72, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 73, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutoriales .listaIndex .itemIndex.active, .tutoriales .listaIndex .itemIndex:hover {
   color: #00c2a8;
 }
 
-/* line 78, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 79, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.ancla {
+  z-index: 10;
+}
+
+/* line 82, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .ancla:before {
   display: block;
   content: " ";
@@ -731,7 +712,7 @@ label #menuMobile {
   visibility: hidden;
 }
 
-/* line 85, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 89, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialCabSecundaria {
   max-height: 60px;
   padding: 1rem 1.25rem;
@@ -740,7 +721,7 @@ label #menuMobile {
   border-radius: .5rem .5rem 0 0;
 }
 
-/* line 92, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 96, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialTitSecundario {
   font-size: 1.25rem;
   font-weight: 500;
@@ -748,12 +729,12 @@ label #menuMobile {
   margin: 0;
 }
 
-/* line 98, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 102, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialAcordion {
   margin: 0 0.5rem 0.5rem 0.5rem;
 }
 
-/* line 100, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 104, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialAcordion .tutorialAcTarjeta {
   position: relative;
   display: flex;
@@ -766,7 +747,7 @@ label #menuMobile {
   border-radius: .25rem .25rem 0 0;
 }
 
-/* line 111, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 115, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialAcordion .tutorialAcCabezal1 {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
@@ -775,7 +756,7 @@ label #menuMobile {
   border-radius: 0.35rem 0.35rem 0 0;
 }
 
-/* line 118, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 122, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialAcordion .tutorialAcCabezal {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
@@ -783,7 +764,7 @@ label #menuMobile {
   border-bottom: 1px solid #0045a2;
 }
 
-/* line 124, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 128, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialAcordion .tutorialAcCabezalU {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
@@ -792,11 +773,12 @@ label #menuMobile {
   border-radius: 0 0 0.35rem 0.35rem;
 }
 
-/* line 131, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 135, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialAcordion .tutorialAcTitulo {
   display: inline-block;
   color: #0045a2;
   text-align: left;
+  text-transform: uppercase;
   vertical-align: middle;
   user-select: none;
   background-color: transparent;
@@ -809,20 +791,25 @@ label #menuMobile {
   text-decoration: none;
 }
 
-/* line 148, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 153, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialAcordion .tutorialAcTitulo:hover {
   color: #00c2a8;
 }
 
-/* line 152, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+/* line 157, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
 .tutorialAcordion .tutorialAcCuerpo {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1rem;
 }
 
+/* line 162, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+.tutorialAcordion .margenLista li {
+  margin: 0 0 0 1rem;
+}
+
 @media all and (max-width: 520px) {
-  /* line 160, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
+  /* line 168, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_tutoriales.scss */
   .tutoriales .tutorialLista {
     flex-direction: column;
   }
@@ -830,6 +817,8 @@ label #menuMobile {
 
 /* line 1, ../CAMADA_18035 HTML_CSS/repo_entregas/scss/_herramientas.scss */
 .herramintaTarjeta {
+  min-width: 295px;
+  min-height: 245px;
   padding: 5px;
   position: relative;
   display: flex;

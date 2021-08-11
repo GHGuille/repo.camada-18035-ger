@@ -12,6 +12,7 @@ body{
   background: $menuBack;
   height: 5rem;
   width: 100%;
+  z-index: 100;
   	.encabezadoLogo{
 		color: $fontMenu;
 		font-size: 2.2rem;
@@ -35,7 +36,7 @@ body{
 			line-height: 5rem;
 			margin: 0 .31rem;
 			color: $fontMenu;
-			font-size: 1em;
+			font-size: 1rem;
 			font-weight: 500;
 			padding: 7px 13px;
 			text-transform: uppercase;
@@ -64,8 +65,19 @@ label #menuMobile{
 	display: none;
 }
 @media all and (max-width: 1118px){
-	.encabezado .encabezadoLogo{
-		padding-left: 8%;
+	.encabezado {
+		.encabezadoLogo{
+			font-size: 2rem;
+			padding-left: 8%;
+		}
+		.encabezadoMenu{
+	  		margin-right: 0rem;
+	  		.menuLink{
+			    font-size: 1rem;
+			    margin:0 .5rem;
+			    padding: 0;
+			  }
+  		}
 	}
 }
 @media (max-width: 944px){
@@ -74,13 +86,6 @@ label #menuMobile{
     font-size: 1.8rem;
 	font-weight: 800;
 	padding-left: 4%;
-  	}
-  	.encabezadoMenu{
-  	margin-right: 0rem;
-  		.menuLink{
-	    font-size: 1rem;
-	    padding: 7px 5px;
-	  }
   	}
   }
 }
@@ -264,24 +269,6 @@ label #menuMobile{
 	}
 }
 /*especiales*/
-$width: 70em;
-.publicidad{
-	background: url("../media/publicidad-lg.png") no-repeat;
-	width: $width;
-	height: 3.125em;
-	margin: 1em;
-	flex-grow: 1;
-	@media all and (max-width: 768px){
-		background: url("../media/publicidad-md.png") no-repeat;
-		width: $width*0.6607;
-		height: 3.125em;
-	}
-	@media all and (max-width: 576px){
-		background: url("../media/publicidad-sm.png") no-repeat;
-		width: $width/2;
-		height: 3.125em;
-	}
-}
 .marginTop{
 	margin-top: 7rem;
 }
